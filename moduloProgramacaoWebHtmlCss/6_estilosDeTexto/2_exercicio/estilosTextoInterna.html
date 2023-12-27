@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Gomes" />
+    <title>Texto 1</title>
+
+    <style>
+      h1 {
+        text-align: center;
+        background-color: rgb(219, 44, 99);
+        color: white;
+      }
+
+      h2 {
+        text-align: right;
+        color: #3950a3;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+      }
+
+      p.paragrafo_1 {
+        direction: ltr;
+        font-size: 2em;
+        letter-spacing: 3px;
+      }
+
+      #paragrafo_2 {
+        font-style: italic;
+        direction: rtl;
+        font-size: 4em;
+        word-spacing: 20px;
+      }
+
+      .Lipsum {
+        text-decoration: overline;
+        text-indent: 50px;
+      }
+
+      .sem_sublinhado {
+        text-decoration: none;
+      }
+
+      hr {
+        width: 50%;
+      }
+
+      .primeira {
+        text-indent: 50px;
+      }
+
+      .paragrafo_3 {
+        text-indent: 50%;
+      }
+
+      #frase_rasurada {
+        text-decoration: line-through;
+      }
+
+      .texto_uppercase {
+        background-color: yellow;
+        text-transform: uppercase;
+      }
+
+      .texto_lowercase {
+        color: #7a39a3;
+        text-transform: uppercase;
+      }
+
+      .ultima {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        text-transform: capitalize;
+      }
+
+      #frase_bold{
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Eu sou um título centrado de cor branca, com background vermelho.</h1>
+
+    <h2 id="titulo_2">E eu sou um título azul, alinhado à direita.</h2>
+
+    <hr />
+
+    <p class="paragrafo_1">
+      Eu sou o paragráfo 1, estou escrito da esquerda para direita, tenho
+      tamanho de letra 2 em, e as minhas letras estão espaçadas de 3px.
+    </p>
+
+    <p id="paragrafo_2">
+      E eu sou o parágrafo 2, estou escrito da direita para esquerda, em italic,
+      tenho tamanho de letra 4em, e as minhas palavras estão espaçadas de 20px.
+    </p>
+
+    <hr />
+
+    <p>
+      <b>
+        O texto abaixo pode ser copiado na página
+        <a
+          href="https://www.lipsum.com/feed/html"
+          alt="Lipsum"
+          class="sem_sublinhado"
+          ><span class="Lipsum">Lipsum </span></a
+        >. Se virem bem, este link não está sublinhado. Tem uma linha por
+        cima...
+      </b>
+    </p>
+
+    <p>
+      Algumas frases do texto abaixo estão rasurados e outras estão em bold. A
+      la frase tem identação de 50px. Todas as outras pertencem á mesma classe
+      do parágrafo 1.
+    </p>
+
+    <p class="primeira">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla est magna,
+      posuere ut quam ut, auctor facilisis turpis.
+    </p>
+
+    <p id="frase_rasurada">
+      Donec id ex ac felis auctor feugiat quis vitae ex. In hac habitasse platea
+      dictumst. Sed vel blandit lorem, vel venenatis est.
+    </p>
+
+    <p class="paragrafo_1">
+      Nunc molestie eros place-rat dolor varius, quis sagittis ipsum molestie.
+      Praesent vulputate felis vel sagittis auctor. Morbi bibendum nisl at est
+      rutrum, vitae pulvinar velit tincidunt.
+    </p>
+
+    <p id="frase_bold">
+      Morbi posuere, augue ut sodales dapibus, libero eros fermentum ligula, in
+      feugiat felis dui vitae sem. Ali-quam vulputate risus a est rhoncus
+      faucibus.
+    </p>
+
+    <hr />
+    <p>Para acabar vamos:</p>
+
+    <p class="texto_uppercase">
+      Por esta frase toda maiuscula (com fundo amarelo)...
+    </p>
+
+    <p class="texto_lowercase">Esta em minuscula (com cor de letra roxo)...</p>
+
+    <p class="ultima">
+      E por fim, as primeiras letras desta frase devem ser maiusculas(com fonte
+      Arial de tamanho 24px).
+    </p>
+  </body>
+</html>
