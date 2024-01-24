@@ -1,0 +1,21 @@
+ol {
+  background-color: rgb(238, 173, 45);
+  padding: 20px;
+  padding-left: 50px;
+}
+
+ol li {
+  background-color: rgb(234, 198, 127);
+  padding: 10px;
+}
+
+ul {
+  background-color: rgb(50, 50, 205);
+  padding: 20px;
+  padding-left: 50px;
+}
+
+ul li {
+  background-color: rgb(125, 125, 191);
+  padding: 10px;
+}
