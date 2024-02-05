@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Gomes" />
+
+    <title>Exemplo 5</title>
+
+    <style>
+      div.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 5px;
+        background-color: #fc0339;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Exeprimente fazer <b>scroll</b> para perceber como <i>frame</i> se
+      comporta e como funciona a posição <i>sticky.</i>
+    </p>
+
+    <div class="sticky">"Eu sou um sticky!"</div>
+
+    <div style="padding-bottom: 2000px">
+      <p>
+        Neste exemplo, e tendo-se atribuiído um valor á propriedade
+        <i>top</i> de 0, o elemento <i>sticky</i> ficará "pegado"ao topo da
+        página, quando se atinge a sua posição no scroll.
+      </p>
+
+      <p>
+        Se voltarmos atrás com o scroll, o elemtno sticky assumirá o atributo
+        <i>relative</i>, voltando à sua posição inicial.
+      </p>
+    </div>
+  </body>
+</html>

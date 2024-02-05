@@ -1,0 +1,18 @@
+.nossaGuia{
+  left: 600px;
+  top: 200px;
+  z-index: 1;
+}
+
+.nossaCarmo{
+  left: 780px;
+  top: 350px;
+  /* z-index: 1; */
+}
+
+.paragrafo{
+  left:700px;
+  top: 700px;
+  position:relative ;
+}
+
