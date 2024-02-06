@@ -1,0 +1,77 @@
+.cabecalho {
+  text-align: center;
+  padding: 20px;
+}
+
+.cabecalho p {
+  position: absolute;
+}
+
+.cabecalho h2 {
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  background-color: bisque;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.caoCaramelo {
+  width: 100%;
+  height: 100%;
+  background-image: url(/9_EstilosDePosicao/2_exercicio/pictures/cao.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.container {
+  height: 700px;
+  position: relative;
+  width: 100%;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 28px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+}
+
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+}
+
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+}
