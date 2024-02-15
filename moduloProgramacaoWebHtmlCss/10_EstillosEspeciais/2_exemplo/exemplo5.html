@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Gomes" />
+
+    <title>Box-shadow property</title>
+
+    <style>
+      /* #example1 {
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px;
+        width: 50%;
+      } */
+
+      #example1{
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 5px #639db0, 10px 10px #f2dc8a, 15px 15px #e66c6a;
+        width: 50%;
+      }
+
+      #example2 {
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px #a5e5fa;
+        width: 50%;
+      }
+
+      #example3 {
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px 5px #a5e5fa;
+        width: 50%;
+      }
+
+      #example4 {
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px 5px 10px #a5e5fa;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>A propriedade box-shadow</h1>
+
+    <h2>Box-shadow simples</h2>
+
+    <div id="example1">
+      <p>
+        Esta div tem deslocamento horizontalmente de 5 px e deslocamemto
+        vertical de 10px. A cor da sombra será a mesma do texto.
+      </p>
+    </div>
+
+    <h2>Box-shadow com cor</h2>
+
+    <div id="example2">
+      <p>
+        Esta div tem deslocamento horizontalmente e vertical de 5 px e 10px,
+        respectivamente e foi atribuida uma cor à sombra.
+      </p>
+    </div>
+
+    <h2>Box-shadow com cor e blur</h2>
+    <div id="example3">
+      <p>
+        Esta div é similiar à anterior mas foi - lhe atribuido um blur de 5 px à
+        sua sombra.
+      </p>
+    </div>
+
+    <h2>Box-shadow com cor e blur</h2>
+    <div id="example4">
+      <p>
+        Esta div é similiar à anterior e além do blur foi - lhe atribuido um
+        valor de spread de 10px.
+      </p>
+    </div>
+
+  </body>
+</html>
