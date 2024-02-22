@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jaqueline Gomes">
+    <meta name="description" content=" Menu dropdown">
+
+    <title>Menu Dropdown</title>
+
+    <style>
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn{
+            background-color: red;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            z-index: 1;
+        }
+
+        .dropdown-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+
+        }
+
+        .dropdown-content a:hover{
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+
+        .dropdown:hover{
+            background-color: yellow;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Menu <i>Dropdown</i></h2>
+
+    <p>Se passar o mouse sobre o botão abaixo, aparecerá um menu <i>dropdown</i>.</p>
+
+    <div class="dropdown">
+
+        <button class="dropbtn">As minhas páginas</button>
+
+        <div class="dropdown-content">
+            
+            <a href="https://www.master.pt/">Master D</a>
+            <a href="https://www.google.pt/">Google</a>
+            <a href="https://www.w3schools.com/">W3schools</a>
+            <a href="https://www.w3.org/">W3C</a>
+        </div>
+    </div>
+</body>
+</html>

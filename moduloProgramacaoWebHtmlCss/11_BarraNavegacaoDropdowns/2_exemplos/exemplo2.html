@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Gomes" />
+    <meta name="description" content="Dropdown Básico" />
+
+    <title>Dropdown Básico</title>
+
+    <style>
+        .dropdown{
+            position:relative;
+            display: inline-block;
+        }
+
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <span> Passe o mousse por cima de mim... </span>
+      <div class="dropdown-content">
+        <p>Olá Mundo!</p>
+      </div>
+    </div>
+  </body>
+</html>
