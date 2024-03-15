@@ -2,10 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Jaqueline Gomes" />
     <meta name="description" content="Exercicio de Layout" />
     <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/d132031da6.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Primeiro layot</title>
   </head>
@@ -15,30 +19,35 @@
         id="interrogacao_pic"
         src="image/interrogacao.png"
         alt="Interrogação"
-        width="300"
+        width="350px"
+        height="200px"
       />
 
       <h2>O meu primeiro layout</h2>
     </div>
 
-    <div class="row">
-      <div class="col-5">
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Master D</a></li>
-            <li><a href="#">Google</a></li>
-            <li><a href="#">W3Schools</a></li>
-            <li><a href="#">W3C</a></li>
-          </ul>
-        </nav>
-      </div>
+    <div class="nav">
+      <ul>
+        <li><a class="active" href="un15-exercicio1.html">Home</a></li>
+        <li><a href="https://www.masterd.pt/">Master D</a></li>
+        <li><a href="https://www.google.pt/">Google</a></li>
+        <li><a href="https://www.w3schools.com/">W3School</a></li>
+        <li><a href="https://www.w3.org/">W3C</a></li>
+
+        <li id="float-right">
+          <a href=""><i class="fas fa-search"></i></a>
+        </li>
+      </ul>
     </div>
 
-    <div class="col-12">
-        <article>
-            
-        </article>
+    <div class="row">
+      <div class="coluna-lado">Coluna 1 - ocupa 25% da largura total</div>
+      <div class="coluna-meio">Coluna 2 - ocupa 50% da largura total</div>
+      <div class="coluna-lado">Coluna 3 - ocupa 25% da largura total</div>
+    </div>
+
+    <div class="footer">
+      <footer>Isto é um footer</footer>
     </div>
   </body>
 </html>
