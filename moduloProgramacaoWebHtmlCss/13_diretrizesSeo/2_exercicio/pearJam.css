@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: LaBeauties;
+  src: url("fonts/LaBeauties.ttf");
+}
+
+.navbar li {
+  display: inline;
+  padding: 4px;
+}
+
+.navbar li a {
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  background-color: #0e0804;
+}
+
+.navbar a:hover {
+  background-color: #381d08;
+}
+
+.navbar #float-right {
+  float: right;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown span {
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0e0804;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #381d08;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown span:hover {
+  background-color: #381d08;
+}
+
+h1 {
+  text-align: center;
+}
+
+.h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: rgb(156, 148, 148);
+}
+
+.description {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.description p {
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+}
+
+.discography {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.discography img {
+  width: 250px;
+  height: auto;
+}
+
+.img-box {
+  width: 300px;
+  display: inline-block;
+}
+
+.discography figcaption {
+  margin: auto;
+  width: 50%;
+  padding: 2px;
+}
+
+.section-tour {
+  padding: 40px;
+  height: 800px;
+  background-color: #0e0804;
+  color: beige;
+}
+
+.section-tour h1 {
+  font-family: LaBeauties;
+}
+
+.sold-out {
+  background-color: red;
+  padding: 6px 10px;
+  margin-left: 15px;
+  color: beige;
+  text-align: center;
+  font-size: 1em;
+}
+
+.available-tickets {
+  position: absolute;
+  background-color: #0e0804;
+  border-radius: 900px;
+  padding: 6px 10px;
+  right: 2%;
+  color: beige;
+  text-align: center;
+  font-size: 1em;
+}
+
+.tickets {
+  position: relative;
+  padding: 10px;
+  width: 50%;
+  height: 500px;
+  left: 25%;
+  background-color: white;
+  color: #0e0804;
+}
+
+.section-tour div li {
+  padding: 15px;
+  list-style: none;
+  list-style-position: inside;
+  border-bottom: 1px solid rgb(158, 146, 146);
+}
+
+.column {
+  float: left;
+  padding-left: 70px;
+  height: 350px;
+  width: 33%;
+}
+
+.column p {
+  text-wrap: wrap;
+  width: 75%;
+}
+
+.column button {
+  position: relative;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 10px;
+  top: 10px;
+  background-color: #0e0804;
+  color: beige;
+  font-size: 1.1em;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.column.side {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.column.middle {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.section-contact {
+  height: 500px;
+  padding: 150px;
+}
+
+.text-center {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: medium;
+  color: rgb(184, 184, 184);
+}
+
+.contact {
+  position: relative;
+  width: 50%;
+  height: 200px;
+  left: 35%;
+}
+
+.contact div {
+  display: inline-block;
+}
+
+.contact-info {
+  margin-right: 50px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.contact-info i {
+  padding: 5px;
+}
+
+.contact-input {
+  width: 50%;
+}
+
+.contact-input input {
+  height: 35px;
+  margin: 4px;
+}
+
+.btn-contact {
+  position: relative;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 10px;
+  top: 40px;
+  right: 60px;
+  background-color: #0e0804;
+  color: beige;
+  font-size: 1.1em;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footer {
+  height: 200px;
+  background-color: #0e0804;
+  color: beige;
+  padding: 100px;
+  text-align: center;
+}

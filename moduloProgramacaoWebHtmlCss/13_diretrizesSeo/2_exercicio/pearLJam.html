@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Gomes" />
+    <meta name="description" content="Site Pear Jam" />
+    <link rel="stylesheet" href="pearJam.css" />
+
+    <script
+      src="https://kit.fontawesome.com/74366e81d6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Pear Jam WebSite</title>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="#section-home">
+            <span>HOME</span>
+          </a>
+        </li>
+
+        <li>
+          <div class="dropdown">
+            <span>A BANDA</span>
+            <div class="dropdown-content">
+              <a href="https://pt.wikipedia.org/wiki/Pearl_Jam">HISTORIA</a>
+              <a href="https://open.spotify.com/intl-pt/artist/1w5Kfo2jwwIPruYS2UWh56">SPOTIFY</a>
+              <a href="https://www.youtube.com/channel/UClQT6Vnsm6BUm0I5kR26EkQ">YOUTUBE</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <a href="#discografia">
+            <span>DISCOGRAFIA</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#section-contact">
+            <span>CONTACTO</span>
+          </a>
+        </li>
+        <li id="float-right">
+          <a href=""><i class="fas fa-search"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <section id="section-home">
+      <h1>PearL Jam</h1>
+      <h3 class="h3">
+        A banda amaericana de rock & roll mais popular dos anos 90.
+      </h3>
+
+      <div class="description">
+        <p>
+          Pearl Jam é uma banda norte - americana de rock, formada em 1990 em
+          Seattle, Washington. Desde sua origem, é formada por Eddie Vedder,
+          Jeff Ament, Stone Gossard, Mike McCready e Matt Cameron.
+        </p>
+
+        <p>
+          A banda já vendou mais de 30 milhões de álbuns somente no Estados
+          Unidos, e aproximadamente 60 milhões em todo mundo. É considerada umas
+          das bandas mais importantes da década de 90 do século 20.
+        </p>
+      </div>
+
+      <h1 id="#discografia">DISCOGRAFIA</h1>
+
+      <div class="discography">
+        <div class="img-box">
+          <img src="pictures/darkMatter.png" alt="Dark Matter - 2024" />
+          <figcaption>Dark Matter - 2024</figcaption>
+        </div>
+
+        <div class="img-box">
+          <img src="pictures/gigationjpg.jpg" alt="Gigation - 2020" />
+          <figcaption>Gigation - 2020</figcaption>
+        </div>
+
+        <div class="img-box">
+          <img src="pictures/LightningBolt.jpg" alt="LightningBolt" />
+          <figcaption>Lightning Bolt - 2013</figcaption>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-tour" class="section-tour">
+      <h1>TOUR</h1>
+      <h3 class="text-center">Reserve seu bilhete</h3>
+
+      <div class="tickets">
+        <div>
+          <ul>
+            <li>Setembro, 2021 <span class="sold-out">Sold out</span></li>
+            <li>Outubro, 2021 <span class="sold-out">Sold out</span></li>
+            <li>
+              Novembro, 2021 <span class="sold-out" hidden>Sold out</span
+              ><span class="available-tickets">200 bilhetes</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <div class="column side">
+            <img
+              src="pictures/band1.png"
+              alt=""
+              style="width: 70%; height: 40%"
+            />
+            <div class="container">
+              <h4><b>Lisboa</b></h4>
+              <p>Concerto Coliseu dos Recreios em Lisboa</p>
+              <button>Comprar bilhetes</button>
+            </div>
+          </div>
+
+          <div class="column midle">
+            <img
+              src="pictures/band2.png"
+              alt=""
+              style="width: 70%; height: 40%"
+            />
+
+            <div>
+              <h4><b>Porto</b></h4>
+
+              <p>Concerto Coliseu dos Recreios no Porto</p>
+              <button>Comprar bilhetes</button>
+            </div>
+          </div>
+
+          <div class="column side">
+            <img
+              src="pictures/band3.png"
+              alt=""
+              style="width: 70%; height: 40%"
+            />
+
+            <div class="container">
+              <h4><b>Coimbra</b></h4>
+
+              <p>Concerto Estádio Municipal de Coimbra</p>
+              <button>Comprar bilhetes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-contact" class="section-contact">
+      <h1>CONTACTOS</h1>
+      <h3 class="text-center">És um fã da banda? Envie uma mensagem.</h3>
+
+      <div class="contact">
+        <div class="contact-info">
+          <i class="fa-solid fa-location-dot"></i>Seatle, EUA
+          <br />
+          <i class="fa-solid fa-phone"></i>Phone: +123 456 789
+          <br />
+          <i class="fa-solid fa-envelope"></i>Email: pearljam@mail.com
+        </div>
+
+        <div class="contact-input">
+          <form>
+            <div class="personal-information">
+              <input
+                id="fname"
+                name="fname"
+                type="text"
+                size="15px"
+                placeholder="Name"
+              />
+
+              <input
+                id="email"
+                name="email"
+                type="email"
+                size="15px"
+                placeholder="Email"
+              />
+            </div>
+
+            <input
+              id="message"
+              name="message"
+              type="text"
+              size="37px"
+              placeholder="Message"
+            />
+
+            <div>
+              <button class="btn-contact" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div>
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+
+        <p>Powered by Jaqueline Lima</p>
+      </div>
+    </footer>
+  </body>
+</html>
