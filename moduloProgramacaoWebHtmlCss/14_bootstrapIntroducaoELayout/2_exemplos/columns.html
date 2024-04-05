@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Gomes" />
+    <meta name="description" content="Columns Bootstrap" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Columns Bootstrap</title>
+
+    <style>
+      h1 {
+        margin-bottom: 30px;
+      }
+      .row {
+        height: 200px;
+        background-color: #d3df7b;
+      }
+      .col {
+        background-color: #809986;
+        border: 1px solid #fdd643;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Colunas Bootstrap - Alinhamento vertical</h1>
+
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col">Coluna 1 alinhada verticamente no topo</div>
+
+        <br />
+
+        <div class="col">Coluna 2 alinhada verticamente no topo</div>
+
+        <div class="col">coluna 3 alinhada verticamente no topo</div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col">Coluna 1 alinhada verticamente no centro</div>
+
+        <div class="col">Coluna 2 alinhada verticalmente no centro</div>
+
+        <div class="col">Coluna 3 alinhada verticamente no centro</div>
+      </div>
+
+      <div class="row align-items-end">
+        <div class="col">Coluna 1 alinhada verticamente no final</div>
+
+        <div class="col">Coluna 2 alinhada no final</div>
+
+        <div class="col">Coluna 3 alinhada no final</div>
+      </div>
+    </div>
+  </body>
+</html>
