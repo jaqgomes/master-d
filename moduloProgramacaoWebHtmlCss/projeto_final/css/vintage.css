@@ -1,0 +1,48 @@
+@font-face {
+  font-family: ProtestGuerrilla-Regular;
+  src: url("../fonts/ProtestGuerrilla-Regular.ttf");
+}
+
+.home h1,
+h2,
+h3 {
+  font-family: ProtestGuerrilla-Regular;
+}
+
+#container {
+  display: inline-block;
+}
+
+@media (min-width: 576px) {
+  .carousel-item img {
+    margin: 0 auto;
+    width: auto !important;
+    height: 480px;
+    max-height: 480px;
+  }
+}
+
+h2 {
+  padding: 25px;
+}
+
+#discografia {
+  padding: 50px;
+}
+
+@media (min-width: 768px) {
+  .card img {
+    margin: 0 auto;
+    width: 400px !important;
+    height: 350px;
+    max-height: 400px;
+  }
+}
+
+#formulario-contacto {
+  display: flex;
+}
+
+.icon-link {
+  color: whitesmoke;
+}
