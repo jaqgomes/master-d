@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+
+    <title>If and Else</title>
+
+    <script type="text/javascript">
+      function compararNum() {
+        var var1 = +document.getElementById("campo1").value;
+        var var2 = +document.getElementById("campo2").value;
+
+        if (var1 > var2) {
+          alert("O valor mais alto é " + var1);
+        } else if (var1 < var2) {
+          alert("O valor mais alto é " + var2);
+        } else {
+          alert("Os valores são iguais ");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    Número 1 : <input type="text" name="campo1" id="campo1" /> Número 2 :
+    <input type="text" name="campo2" id="campo2" />
+
+    <input type="submit" value="Comparar" onclick="compararNum()" />
+  </body>
+</html>

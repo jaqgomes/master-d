@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+
+    <title>Signs Swich</title>
+
+    <script type="text/javascript">
+      function compararNum() {
+        switch (document.getElementById("campo1").value) {
+          case "capricórnio":
+            alert("Saúde e negócios são a sua praia esta semana!");
+            break;
+
+          case "leão":
+            alert("Uma oportunidade difícil de recusar aparecerá no seu local de trabalho!");
+            break;
+
+          case "caranguejo":
+            alert("Cuide um pouco melhor de si, ou vai ficar doente este inverno.");
+            break;
+
+          case "carneiro":
+            alert("A nível pessoal, deixe os seus amigos aconselharem.");
+            break;
+
+          case "balança":
+            alert("Tudo bem! Continue assim.");
+            break;
+            
+          case "touro":
+            alert("Tem muito trabalho, tire férias. A sua saúde vai agradecer");
+
+          default:
+            alert("Não temos esse signo do zodíaco, tente outro");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    Signo: <input type="text" name="campo1" id="campo1" />
+    <input type="submit" value="Ver a sorte" onclick="compararNum()" />
+  </body>
+</html>
