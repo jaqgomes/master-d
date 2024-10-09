@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <meta
+      name="description"
+      content=" Criação de arrays, conjunto de elementos ordenados."
+    />
+
+    <title>Arrays</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      var novoArray = ['carro', 'mota', 'barco'];
+      console.log('array original ' + novoArrAy);
+
+      novoArrAy.push('comboio');
+      novoArrAy.unshift('bicicleta');
+
+      console.log('array com mais dois elementos ' + novoArray);
+
+      novoArrAy.splice(novoArrAy.indexOf('mota'), 1);
+
+      novoArrAy.forEach(function (elemento, indece, array) {
+        console.log(elemento, indice);
+      });
+    </script>
+  </body>
+</html>

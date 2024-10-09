@@ -1,0 +1,1 @@
+alert("Sou o primeiro Script JS.");

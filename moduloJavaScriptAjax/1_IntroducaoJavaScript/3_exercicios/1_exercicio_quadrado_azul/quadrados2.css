@@ -1,0 +1,13 @@
+#azul{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: 100px auto;
+}
+
+#laranja{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin: 20px auto;
+}

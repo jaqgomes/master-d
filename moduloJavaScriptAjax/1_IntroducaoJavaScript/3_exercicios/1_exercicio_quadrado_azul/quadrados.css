@@ -1,0 +1,17 @@
+.azul {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+}
+
+.laranja {
+  height: 100px;
+  width: 100px;
+  background-color: orange;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+}
