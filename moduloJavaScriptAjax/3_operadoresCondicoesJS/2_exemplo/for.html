@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Jaqueline Lima">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
 
     <script type="text/javascript">
-        function quantos(objSelect) {
-            var ns = 0;
-            for (let i = 0; i < objSelect.options.length; i++) {
-                if (objSelect.options[i].selected) {
-                    ns++;
-                }
-                alert('Selecionados: ' + ns);
-            }
+      function quantos(objSelect) {
+        var ns = 0;
+        for (let i = 0; i < objSelect.options.length; i++) {
+          if (objSelect.options[i].selected) {
+            ns++;
+          }
+          alert("Selecionados: " + ns);
         }
+      }
     </script>
 
     <title>For</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <form name="Fselect">
+      Seleccione as marcas de carro que gosta <br />
+      <select name="carros" multiple="multiple">
+        <option>Audi</option>
+        <option>Seat</option>
+        <option>Kia</option>
+        <option>Ferrari</option>
+        <option>Fiat</option>
+      </select>
+
+      <br />
+
+      <input
+        type="button"
+        value="Nº de Selecionados"
+        onclick="quantos(document.Fselect.carros)"
+      />
+    </form>
+  </body>
 </html>
