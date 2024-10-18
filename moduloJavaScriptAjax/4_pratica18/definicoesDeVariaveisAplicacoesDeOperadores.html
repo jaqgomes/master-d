@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name=" author" content="Jaqueline Lima" />
+    <meta
+      name="description"
+      content="Definições de Variáveis, a sua Visualização e Aplicação de Operadores- Prática 18"
+    />
+
+    <title>Definições de Variáveis</title>
+
+    <script type="text/javascript">
+      alert(
+        "Bem-vindo à Prática 18 onde vamos saber mais sobre definições de variáveis, sua visualização e aplicação de operadores em JavasScript"
+      );
+
+      var nome = "Maria";
+      var pais = "Portugal";
+      var cidade = "Lisboa";
+      var anoNascimento = 1983;
+      var maiorIdade = minhaIdade >= 18;
+      console.log(nome, pais, cidade, anoNascimento);
+
+      var anoAtual = 2024;
+      var minhaIdade = anoAtual - anoNascimento;
+      console.log(minhaIdade);
+
+      var maiorIdade = minhaIdade >= 18;
+      console.log(minhaIdade >= 18);
+
+      if (maiorIdade) {
+        console.log("É maior idade!");
+      } else {
+        var difIdade = 18 - minhaIdade;
+
+        console.log(
+          "Ainda não é maior de idade. Faltam-lhe" +
+            " " +
+            " " +
+            " anos para ser maior idade."
+        );
+      }
+
+      document.write(
+        `Olá. O meu nome é ${nome}, vivo em ${pais}, na cidade de ${cidade}. Tenho ${minhaIdade} anos.`
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
