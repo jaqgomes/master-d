@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+
+    <title>Declaração de Arrays e o Método Alert</title>
+
+    <script text="text/javascript">
+      var novoArray = [];
+
+      function confirmar() {
+        var confirm = document.getElementById('texto').value;
+        if (confirm != '') {
+          novoArray += confirm + ' ';
+        }
+      }
+
+      function mostrar() {
+        alert(novoArray);
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <textarea id="texto"></textarea></form><br/>
+      <input type="button" value="Inserir texto" onclick="confirmar()" />
+      <input type="button" value="Mostrar texto" onclick="mostrar()" />
+    
+   
+  </body>
+</html>

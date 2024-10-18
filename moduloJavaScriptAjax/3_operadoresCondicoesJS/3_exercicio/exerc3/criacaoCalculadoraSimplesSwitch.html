@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+
+    <title>Calculadora JavaScript</title>
+
+    <script type="text/javascript">
+      function calculadora(operador) {
+        var value1 = Number(document.getElementById("firstValue").value);
+        var value2 = Number(document.getElementById("secondValue").value);
+        var result = 0;
+
+        switch (operador) {
+          case "+":
+            result = value1 + value2;
+            break;
+
+          case "-":
+            result = value1 - value2;
+            break;
+
+          case "*":
+            result = value1 * value2;
+            break;
+
+          case "/":
+            result = value1 / value2;
+        }
+        document.getElementById("result").setAttribute("value", result);
+      }
+    </script>
+  </head>
+
+  <body>
+    <label for="firstValue">Número 1:</label>
+    <input type="text" id="firstValue" />
+
+    <label for="secondValue">Número 2:</label>
+    <input type="text" id="secondValue" />
+
+    <br />
+    <br />
+
+    <input type="button" value="+" onclick="calculadora('+')" />
+    <input type="button" value="-" onclick="calculadora('-')" />
+    <input type="button" value="*" onclick="calculadora('*')" />
+    <input type="button" value="/" onclick="calculadora('/')" />
+
+    <br />
+    <br />
+
+    <label for="result">Resultado:</label>
+    <input type="text" id="result" />
+  </body>
+</html>

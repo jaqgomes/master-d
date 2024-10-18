@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+
+    <title>Criação Web com Campos de de Preenchimento</title>
+
+    <script type="text/javascript">
+      function confirmar() {
+        var confirm = document.getElementById("textarea").value;
+        if (confirm == "") {
+          alert("O campo necessita de estar preenchido.");
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <form>
+      <textarea id="textarea"></textarea>
+      <input type="submit" value="botão" onclick="confirmar()" />
+    </form>
+  </body>
+</html>
