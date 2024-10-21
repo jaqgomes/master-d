@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <meta
+      name="description"
+      content="Passa string commo parametro e a funcao tentara interpretar a string convertendo - a em codigo Javascript"
+    />
+    <script type="text/javascript">
+      function calcular(formulario) {
+        formulario.resultado.value = eval(formulario.operacao.value);
+      }
+    </script>
+
+    <title>Eval</title>
+  </head>
+  <body>
+    <form name="calculadora">
+      String da operação
+
+      <input type="text" name="operacao" /> <br />
+      Resultado:
+      <input type="text" name="resultado" /> <br />
+      <input type="button" value="Calcular" onclick="calcular(this.form)" />
+    </form>
+  </body>
+</html>

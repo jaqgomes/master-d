@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="auhtor" content="Jaqueline Lima" />
+    <meta
+      name="description"
+      content=" Argumentos  são valores na forma de variáveis  que se pretende passar para a função."
+    />
+    <title>Arguments</title>
+
+    <script type="text/javascript">
+      function calculadora(operador) {
+        resultado = 0;
+
+        for (var i = 1; i < arguments.length; i++) {
+          switch (operador) {
+            case "+":
+              resultado = resultado + parseFloat(arguments[i]);
+              break;
+            case "-":
+              resultado = resultado - parseFloat(arguments[i]);
+
+            case "*":
+              if (resultado == 0) {
+                resultado = 1;
+              }
+              resultado = resultado * parseFloat(arguments[i]);
+              break;
+          }
+        }
+        return resultado;
+      }
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      alert(calculadora("+", "6", "23", "1", "67"));
+      alert(calculadora("-", "567", "2", "32", "2"));
+      alert(calculadora("*", "3", "2", "34", "2"));
+    </script>
+  </body>
+</html>

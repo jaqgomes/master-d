@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="autho" content="Jaqueline Lima" />
+    <meta
+      name="description"
+      content="isNan verifica se não é um número, devolvendo (verdadeiro) se o valor do parâmetro não for um número"
+    />
+    <title>isNan</title>
+    <script type="text/javascript">
+      function conversor(valor) {
+        valorConvertido = parseFloat(valor);
+
+        if (isNaN(valorConvertido)) {
+          alert("não é um número");
+        } else {
+          alert("é um número");
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <input type="text" name="valor" id="valor" />
+    <br />
+
+    <input
+      type="button"
+      value="é um número?"
+      onclick="conversor(document.getElementById('valor').value)"
+    />
+  </body>
+</html>
