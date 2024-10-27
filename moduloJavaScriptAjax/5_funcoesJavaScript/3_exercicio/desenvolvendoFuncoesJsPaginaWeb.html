@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <meta
+      name="description"
+      content="Desenvolvendo uma página web utilizando funções Javascript"
+    />
+
+    <script type="text/Javascript">
+
+      let values = [];
+
+      function adicionar(value) {
+        values.push(value);
+        console.log(values.join(' '));
+      }
+
+      function apagar() {
+        console.log('string reiniciada');
+        values = [];
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="valor" />
+    <button
+      type="submit"
+      onclick="adicionar(document.getElementById('valor').value)"
+      ;
+    >
+      Adicionar
+    </button>
+    <button type="reset" onclick="apagar()">Apagar</button>
+  </body>
+</html>
