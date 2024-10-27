@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <script type="text/javascript" src="criacaoDeObjetos.js"></script>
+
+    <title>Propriedade</title>
+  </head>
+  <body>
+    Criação de um objeto em javascript <br />
+    e as suas propriedades:<br />
+    <br />
+
+    <script type="text/javascript">
+      
+      funcionario1 = new funcionario("1980", 23, 6);
+      
+      for (var i in funcionario1) {
+        document.write("funcionario1." + i + " = " + funcionario1[i] + "<br>");
+      }
+    </script>
+  </body>
+</html>
