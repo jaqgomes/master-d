@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <meta
+      name="description"
+      content="Criação de um formulário com dois campos"
+    />
+
+    <title>OnkeyUp</title>
+
+    <script type="text/javascrip">
+      function duplicar(valor){
+          teste.copia.value = valor;
+      }
+    </script>
+  </head>
+  <body>
+    <form name="teste" method="post" action="">
+      Nome
+      <input type="text" oneKeyUp="duplicar(this.value)" name="nome" value="" />
+      <br />
+
+      Nome duplicado<input type="text" name="copia" value="" />
+    </form>
+  </body>
+</html>
