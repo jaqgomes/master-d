@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <meta
+      name="description"
+      content="Formulario com dois campos, verifica se um dos textos foi inserido"
+    />
+
+    <title>Formulario com dois campos</title>
+    <script type="text/javascript">
+      function validar() {
+        if (teste.texto1.value == "" || teste.texto2.value == "") {
+          alert("um dos campos está vazios");
+        } else {
+          alert("ok");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form name="teste" method="POST" action="">
+      Texto 1<input type="text" name="texto1" value="" /><br />
+      Texto 2<input type="text" name="texto2" value="" /><br />
+
+      <input type="button" onclick="validar()" value="validar" />
+    </form>
+  </body>
+</html>
