@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+
+    <title>onFocus</title>
+
+    <script type="text/javascript"></script>
+  </head>
+  <body>
+    <form name="teste" method="POST" action="">
+      <label for="text1"
+        >Texto 1:
+        <input
+          type="text"
+          name="texto1"
+          value=""
+          id="text1"
+          onfocus="teste.ajuda.value = 'Aqui fica o texto de ajuda do texto 1'"
+      /></label>
+
+      <br /><br />
+
+      <label for="text2"
+        >Texto 2:
+        <input
+          type="text"
+          name="texto2"
+          value=""
+          id="text2"
+          onfocus="teste.ajuda.value = 'Aqui fica o texto de ajuda do texto 2'"
+      /></label>
+
+      <br /><br />
+
+      <label for="ajuda">Ajuda:</label>
+      <input type="text" name="ajuda" size="90" id="ajuda" />
+      <br />
+    </form>
+  </body>
+</html>

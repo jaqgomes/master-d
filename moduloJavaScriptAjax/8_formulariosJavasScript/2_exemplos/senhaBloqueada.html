@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+
+    <title>Senha Bloqueada</title>
+
+    <script type="text/javascript">
+      function bloqueio() {
+        utilizador = teste.utilizador.value;
+
+        if (utilizador != "") {
+          utilizador = true;
+        } else {
+          utilizador = false;
+        }
+
+        if (utilizador == true) {
+          teste.senha.disabled = false;
+        } else {
+          teste.senha.disabled = true;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form name="teste" method="POST" action="">
+      <label for="nome">Nome do utilizador:</label>
+      <input
+        type="text"
+        name="utilizador"
+        size="10"
+        id="nome"
+        onkeyUp="bloqueio()"
+      />
+      <br />
+
+      <label for="password">Senha:</label>
+      <input type="password" name="senha" size="10" id="password" disabled />
+    </form>
+  </body>
+</html>
