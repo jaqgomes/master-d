@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <meta
+      name="description"
+      content="Controlar o tamanho minimo de um campo. Tera que ter pelo menos 8 caracteres."
+    />
+
+    <script type="text/javascript">
+      function validarChave() {
+        if (teste.senha.value.length < 8) {
+          alert("Deve introduzir uma senha com mais de 8 caracteres");
+          teste.senha.focus();
+          return true;
+        }
+      }
+    </script>
+    <title>Validar chave</title>
+  </head>
+  <body>
+    <form name="teste" method="POSTpost" action="">
+      <label for="utlizador"> Nome do utlizador:</label>
+      <input type="text" name="utilizador" size="10" /><br />
+
+      <label for="password">Senha:</label
+      ><input type="password" name="senha" size="10" /><br />
+
+      <input type="button" onclick="validarChave()" value="Enviar" />
+    </form>
+  </body>
+</html>
