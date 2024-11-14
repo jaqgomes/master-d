@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <meta
+      name="description"
+      content="Criar um formulario de registro contendo um checkbox que aceita os termos de registro."
+    />
+
+    <title>Checkbox</title>
+
+    <script type="text/javascript">
+      function validar(form) {
+        if (form.aceite.checked == false) {
+          alert("Deve aceitar os termos e condições");
+          form.aceite.focus();
+          return true;
+        }
+        alert("Aceitou os termos e as condições !");
+      }
+    </script>
+  </head>
+  <body>
+    <form name="teste" method="post" action="">
+      <label for="name">Nome: </label><input name="nome" size="20" /><br />
+
+      <label for="outros">... outros dados do formulário ...</label><br />
+
+      <input type="checkbox" name="aceite" /><label for="aceite"
+        >Aceito os termos e condições</label
+      ><br />
+
+      <input type="button" value="Enviar" onclick="validar(this.form)" />
+    </form>
+  </body>
+</html>
