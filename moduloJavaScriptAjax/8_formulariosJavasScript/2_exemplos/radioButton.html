@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <meta
+      name="description"
+      content="Prentende-se utlizar um radio button para marcar ou desmarcar todos os checkboxes"
+    />
+    <title>RadioButton</title>
+
+    <script text="'text/javascript">
+      function marca(form) {
+        for (i = 0; i < form.length; i++) {
+          form.modelos[i].checked = true;
+        }
+      }
+
+      function desmarca(form) {
+        for (i = 0; i < form.modelos.length; i++) {
+          form.modelos[i].checked = false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form name="teste" method="postPOST" action="">
+      <label for="marcar">Marcar todas as opções ? <br /> </label>
+      <input
+        type="radio"
+        name="opcao"
+        value="sim"
+        onclick="marca(this.form)"
+        id="sim"
+      /><label for="sim">Sim</label>
+
+      <input
+        type="radio"
+        name="opcao"
+        value="nao"
+        onClick="desmarcar(this.form)"
+        id="nao"
+      /><label for="nao">Não</label>
+    </form>
+
+    <br /><br />
+
+    <label for="'selecione">Selecione modelos dos carros que mais gosta:</label
+    ><br />
+
+    <input type="checkbox" name="modelos" value="Ferrari" /><label for="ferrari"
+      >Ferrari</label
+    ><br />
+
+    <input type="checkbox" name="modelos" value="'Seat" /><label for="seat"
+      >Seat</label
+    ><br />
+
+    <input type="checkbox" name="modelos" value="Porsche" /><label for="porsche"
+      >Porsche</label
+    ><br />
+
+    <input type="checkbox" name="modelos" value="Audi" /><label for="audi"
+      >Audi</label
+    >
+  </body>
+</html>
