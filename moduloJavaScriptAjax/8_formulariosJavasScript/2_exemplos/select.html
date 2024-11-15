@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="'Jaqueline Lima" />
+    <meta
+      name="description"
+      content="conjunto de checkboxes. Quando um modelo e selecionado, ele deve ser inserido abaixo no select"
+    />
+
+    <title>Select</title>
+
+    <script type="text/javascript">
+      function inserir(modelo) {
+        opt = newOption(modelo, modelo);
+        teste.favorito.options[teste.favorito.options.length] = opt;
+      }
+
+      function eliminar(modelo) {
+        for (i = 0; i < teste.favorito.options.length; i++) {
+          if (teste.favorito.options[i].text == modelo) {
+            teste.favorito.options[i] == null;
+          }
+        }
+      }
+
+      function newOption(modelo, modelo) {
+        //Criar um objecto Option
+        var opt = document.createElement("option");
+
+        //Assignar texto e valor
+        opt.text = modelo;
+        opt.value = modelo;
+
+        return opt;
+      }
+    </script>
+  </head>
+  <body>
+    <form name="teste" method="POST" action="">
+      <label for="modelos">Selecione os modelos de carros favoritos:</label
+      ><br />
+
+      <input
+        id="ferrari"
+        type="checkbox"
+        name="modelo1"
+        value="Ferrari"
+        onChange="
+        if(this.checked){
+            inserir(this.value);
+        } else{
+            eliminar(this.value);
+        }"
+      />
+      <label for="ferrari">Ferrari</label><br />
+
+      <input
+        id="seat"
+        type="checkbox"
+        name="modelo2"
+        value="Seat"
+        onChange="if(this.checked){
+        inserir(this.value);}
+        else{
+            eliminar(this.value);
+        }"
+      />
+      <label for="seat">Seat</label><br />
+
+      <input
+        id="porsche"
+        type="checkbox"
+        name="modelo3"
+        value="Porsche"
+        onChange="if(this.checked){
+        inserir(this.value);
+        }else{
+            eliminar(this.value);}"
+      />
+      <label for="Porsche">Porsche</label><br />
+
+      <input
+        id="audi"
+        type="checkbox"
+        name="modelo04"
+        value="Audi"
+        onChange="if(this.checked){
+        inserir(this.value);}else{eliminar(this.value);}"
+      />
+      <label for="Audi">Audi</label><br /><br />
+
+      <label for="favorito">Qual é mesmo o favorito?</label><br />
+      <select id="favorito" name="favorito">
+        <option value="">Selecione o favorito</option>
+      </select>
+    </form>
+  </body>
+</html>
