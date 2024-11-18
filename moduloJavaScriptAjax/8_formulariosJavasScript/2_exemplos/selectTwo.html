@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Gomes" />
+    <meta
+      name="description"
+      contentent="Dois exemplos de selects diferentes. No primeiro aparecem diferentes países e no segundo idiomas.
+       O segundo select estara disabled até que um valor do primeiro select seja selecionado."
+    />
+    <script type="text/javascript">
+      function habilitarSelect(form) {
+        if (form.paises[0].select == true) {
+          form.idioma.disabled = true;
+        } else {
+          form.idioma.disabled = false;
+        }
+      }
+    </script>
+
+    <title>Two example Select</title>
+  </head>
+  <body>
+    <form name="teste" method="POST" action="">
+      <select name="paises" onChange="habilitarSelect(this.form)">
+        <option value="">Selecione um país</option>
+        <option value="portugal">Portugal</option>
+        <option value="espanha">Espanha</option>
+        <option value="franca">França</option>
+        <option value="alemanha">Alemanha</option>
+      </select>
+
+      <select name="idioma" disabled>
+        <option value="">Idioma</option>
+        <option value="portugues">Português</option>
+        <option value="espanhol">Espanhol</option>
+        <option value="frances">Francês</option>
+        <option value="alemao">Alemão</option>
+      </select>
+    </form>
+  </body>
+</html>
