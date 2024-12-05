@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <meta
+      name="description"
+      content="Function document.write permite escrever uma string no documento, caso o documento ainda não exista."
+    />
+
+    <title>Function Document.Write</title>
+
+    <script type="text/javascript">
+      function mudar() {
+        alert("Feche esta mensagem para verificar a diferença");
+        document.write("<h1>Novo texto inserido como document.write</h1>");
+      }
+    </script>
+  </head>
+
+  <body onload="mudar();">
+    <p>texto dentro do parágrafo</p>
+
+    <script>
+      document.write("<h2>Texto inserido com o document.write</h2>");
+    </script>
+  </body>
+</html>
