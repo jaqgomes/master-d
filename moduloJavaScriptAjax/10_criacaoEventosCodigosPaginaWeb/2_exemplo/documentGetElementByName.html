@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="document.getElementsByName é um metodo que retorna uma colecao de elementos" />
+
+    <title>Exemplo getElementsByName</title>
+
+    <script type="text/javascript">
+      function mostrar() {
+        var vector = document.getElementsByName("nome");
+
+        for (i = 0; i < vector.length; i++) {
+          alert(vector[i].value);
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <form name="teste">
+      <input type="text" name="nome" value="Pedro" />
+      <input type="text" name="nome" value="Maria" />
+      <input type="text" name="nome" value="Joaquim" />
+      <input type="button" name="env" value="Mostrar !" onclick="mostrar()" />
+    </form>
+  </body>
+</html>
