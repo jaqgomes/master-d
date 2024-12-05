@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="O metodo document insertBefore permiteinseir um elemento antes de outro está definido e que passa como parametro à função. Recebe dois parametros: 
+      o primeiro é o novo elemento a inserir e o segundo é a referencia ao elementocuja posicao é assumida."
+    />
+
+    <title>Document insertBefore</title>
+  </head>
+  <body>
+    <div>
+      <span id="segundo"> e depois a omelete é feita.</span>
+    </div>
+
+    <script type="text/javascript">
+      var novo = document.createElement("span");
+
+      var novoTexto = document.createTextNode(" Primeiro bate-se os ovos"); //retorna  um objeto de no text que contém o conteudo de texto especificado
+
+      novo.appendChild(novoTexto); //metodo acrescenta um no(elemento) como ultimo filho de um elemento
+      var antigo = document.getElementById("segundo");
+
+      var pai = antigo.parentNode;
+      pai.insertBefore(novo, antigo); //insere um novo nó antes do existente
+    </script>
+  </body>
+</html>
