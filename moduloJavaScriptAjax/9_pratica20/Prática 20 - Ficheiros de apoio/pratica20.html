@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Prática 20 - Formulário</title>
+    <link href="estilos.css" rel="stylesheet" />
+    <script type="text/javascript" src="verificarDadosForm.js"></script>
+  </head>
+
+  <body>
+    <div class="caixa0">
+      <h1 id="title-header">MasterD</h1>
+    </div>
+    <div class="caixa1">
+      <br />
+      <form action="" method="" name="formulario" onsubmit="return validar(this)">
+        <h3>PREENCHA OS SEGUINTES CAMPOS:</h3>
+        <table>
+          <tr>
+            <td>
+              <h5>NOME:</h5>
+            </td>
+            <td style="font-size: 20px">
+              <input
+                class="textbox"
+                type="text"
+                name="nome"
+                maxlength="50"
+                size="40"
+                id="nome"
+                value=""
+                placeholder="O seu nome"
+                required
+              />
+              *
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h5>MORADA:</h5>
+            </td>
+            <td style="font-size: 20px">
+              <input
+                class="textbox"
+                type="text"
+                name="morada"
+                maxlength="80"
+                size="40"
+                id="morada"
+                value=""
+                placeholder="A sua morada"
+                required
+              />
+              *
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h5>TELEMÓVEL:</h5>
+            </td>
+            <td style="font-size: 20px">
+              <input
+                class="textbox"
+                type="text"
+                maxlength="9"
+                size="9"
+                id="telemovel"
+                value=""
+                placeholder="O seu número de telemóvel"
+                required
+              />
+              *
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h5>IDADE:</h5>
+            </td>
+            <td style="font-size: 20px">
+              <input
+                class="textbox"
+                type="text"
+                name="idade"
+                maxlength="2"
+                size="9"
+                id="idade"
+                value=""
+                placeholder="A sua idade"
+                required
+              />
+              *
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h5>E-MAIL:</h5>
+            </td>
+            <td style="font-size: 20px">
+              <input
+                class="textbox"
+                type="text"
+                name="email"
+                maxlength="50"
+                size="40"
+                id="email"
+                value=""
+                required
+              />
+              *
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>(*) Os campos marcados com um asterisco são obrigatórios.</p>
+            </td>
+          </tr>
+        </table>
+        <br />
+        <div class="botoes">
+          <input type="submit" name="Botao enviar" class="botao cinza" value="ENVIAR" />
+          <input type="reset" name="Botao apagar" class="botao cinza" value="APAGAR" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
