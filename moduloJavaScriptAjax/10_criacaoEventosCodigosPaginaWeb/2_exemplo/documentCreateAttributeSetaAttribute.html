@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Document creatAttribute e setaAttributeNode, utilizando esses metodos para para criar um atributo com o nome especificado 
+      e retorna o objeto de atributo, já o setaAttribute adiciona um novo atributo ao elemento especificado."
+    />
+    <title>Document creatAttribute e setaAttributeNode</title>
+
+    <script type="text/javascript">
+      function criarAtributo() {
+        var elemento = document.getElementById("elemento");
+        var atributo = document.createAttribute("meuAtributo"); // utilizando esses metodos para para criar um atributo com o nome especificado e retorna o objeto de atributo
+        atributo.nodeValue = "valor de novo atributo"; //adiciona um novo atributo ao elemento especificado.
+        element.setAttributeNode(atributo);
+
+        alert(elemento.getAttribute("meuAtributo"));
+      }
+    </script>
+  </head>
+  <body onload="criarAtributo();">
+    <div id="elemento">contúdo do elemento</div>
+  </body>
+</html>
