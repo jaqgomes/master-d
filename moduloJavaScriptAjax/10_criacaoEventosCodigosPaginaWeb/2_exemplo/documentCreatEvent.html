@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <meta
+      name="description"
+      content="o metodo document creatEvenet é possivel criar eventos de uma forma dinâmica. Porem esta absoleto, usa se customEvent. "
+    />
+    <title>Document creatEvent</title>
+
+    <script type="text/javascript">
+      function simularClick() {
+        var evento = document.createEvent("MouseEvents");
+        evento.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+
+        var elemento = document.getElementById("checkbox");
+        elemento.dispatchEvent(evento);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="checkbox" id="checkbox" /><label for="checkbox">checkbox</label><br />
+    <input type="button" value="criar evento" onclick="simularClick()" />
+  </body>
+</html>
