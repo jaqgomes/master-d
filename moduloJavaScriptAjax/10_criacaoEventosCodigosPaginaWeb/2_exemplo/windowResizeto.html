@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <meta
+      name="descripton"
+      content="metodo windowResizeto permite mudar o tamanho da janela, de forma dinamica, passando os novos tamanhos de largura e altura por parametro"
+    />
+
+    <title>Metodo Window Resizeto</title>
+
+    <script type="text/javascript">
+      function mudarTamanho() {
+        window.resizeTo(345,200);
+      }
+
+      function abrir() {
+        janela = window.open("", "", "width=100, height=100");
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" onclick="abrir()" value="Abrir" />
+    <input type="button" onclick="mudarTamanho()" value="Alterar Tamanho" />
+  </body>
+</html>
