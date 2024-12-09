@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <meta
+      name="description"
+      content="Este método permite criar novas janelas a apartir da janela onde o utilizador esta tambem chamadas pop-up"
+    />
+
+    <title>Metodo windowOpen</title>
+
+    <script type="text/javascript">
+      var novaJanela;
+
+      function abrirJanela() {
+        novaJanela = window.open(
+          "http://www.google.com",
+          "teste",
+          "width=200, height=200, status=no, toolbar=no, top=300, left=300"
+        );
+      }
+
+      function fecharJanela() {
+        novaJanela.close();
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" onclick="abrirJanela()" value="Abrir" />
+    <input type="button" onclick="fecharJanela()" value="Fechar" />
+  </body>
+</html>
