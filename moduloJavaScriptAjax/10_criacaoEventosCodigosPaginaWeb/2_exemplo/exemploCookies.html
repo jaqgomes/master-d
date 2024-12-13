@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <meta name="description" content="Exemplos de cookies" />
+
+    <title>Exemplo de Cookies</title>
+
+    <script type="text/javascript">
+      var gestorCookie = {
+        criar: function (nome, valor, dias) {
+          if (dias) {
+            var data = new Date();
+            data.setTime(data.getTime() + dias * 24 * 60 * 60 * 1000);
+            var expira = "; expira=" + data.toGMTString();
+          } else var expira = "";
+
+          document.cookie = nome + "=" + valor + expira + "; path=/";
+
+          alert("Criada");
+        },
+
+        ler: function (nome) {
+          var inicioCookie = nome + "=";
+          var cookies = document.cookie.split(";");
+
+          for (var i = 0; i < cookies.length; i++) {
+            var peca = cookies[i];
+
+            while (peca.charAt(0) == " ") {
+              peca = peca.substring(1, peca.length);
+            }
+
+            if (peca.indexOf(inicioCookie) == 0) {
+              return peca.substring(inicioCookie.length, peca.length);
+            }
+          }
+          return "Nenhum valor encontrado";
+        },
+
+        apagar: function (nome) {
+          gestorCookie.criar(nome, "", -1);
+          alert("Apagada");
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <label>Criar Cookie</label>
+    <br />
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" id="nome" />
+    <br />
+
+    <label for="valor">Valor</label>
+    <input type="text" name="valor" id="valor" /><br />
+
+    <label for="dias">Dias</label>
+    <input type="text" name="dias" id="dias" />
+    <br />
+
+    <input
+      type="button"
+      onclick="gestorCookie.criar(
+        document.getElementById('nome').value, 
+        document.getElementById('valor').value, 
+        document.getElementById('dias').value)"
+      value="Criar"
+    />
+    <br />
+    <br />
+
+    <label>Ler Cookie</label><br />
+
+    <label for="valordev">Cookie a ler:</label>
+    <input type="text" name="valordev" id="valordev" />
+    <br />
+    <input type="button" onclick="alert(gestorCookie.ler(document.getElementById('valordev').value))" value="Ler" />
+    <br /><br />
+
+    <label for="apagar">Cookie a apagar:</label>
+    <input type="text" name="apagar" id="apagar" /><br />
+    <input type="button" onclick="gestorCookie.apagar(document.getElementById('apagar').value)" value="Apagar" />
+
+    <br /><br />
+  </body>
+</html>

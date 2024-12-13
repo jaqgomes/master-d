@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <meta
+      name="description"
+      content="O metodo setInterval permite executar uma tarefa num loop inifinito a cada determinado intervalo de tempo. Esse intervalo de tempo entre a execução e exucução do codigo é passado para o parametro em milissegundos"
+    />
+    <title>Metodo setInterval</title>
+
+    <script type="text/javascript">
+      var temporizador;
+
+      function mudar() {
+        temporizador = setInterval(rodaCores, 2000);
+      }
+
+      function parar() {
+        clearInterval(temporizador);
+      }
+
+      function rodaCores() {
+        document.getElementById("caixa").style.backgroundColor = getRandomColor();
+      }
+
+      function getRandomColor() {
+        var possivel = "0123456789ABCDEF";
+        var color = "#";
+        for (var i = 0; i < 6; i++) {
+          color += possivel[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+    </script>
+  </head>
+  <body>
+    Caixa de cores <br />
+    <div id="caixa" style="width: 100px; height: 100px; background-color: #ff0000">&nbsp;</div>
+    <button onclick="mudar()">Radar de cores</button>
+    <button onclick="parar()">Parar</button>
+  </body>
+</html>
