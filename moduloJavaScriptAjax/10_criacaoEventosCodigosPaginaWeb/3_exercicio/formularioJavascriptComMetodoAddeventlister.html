@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <meta
+      name="description"
+      content="Criacao de formulario em javascrit, incluindo campo de texto e checkbox com aplicacao do metodo Addeventlisterner"
+    />
+
+    <title>Criacao de formulario em javascrit, com metodo addventlistner</title>
+
+    <script type="text/javascript">
+      function lancarAlerta() {
+        alert("Alerta");
+      }
+
+      function load() {
+        const checkbox = document.getElementById("protecao");
+        checkbox.addEventListener("click", lancarAlerta);
+      }
+    </script>
+  </head>
+  <body onload="load();">
+    <form>
+      <label for="name">Nome :</label>
+      <input id="name" type="text" />
+
+      <br />
+      <input id="protecao" type="checkbox" />
+      <label for="protecao"> Deseja que proteja seus dados? </label>
+    </form>
+  </body>
+</html>
