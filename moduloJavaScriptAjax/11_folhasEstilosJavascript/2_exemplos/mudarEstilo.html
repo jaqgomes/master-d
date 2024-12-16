@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <meta name="description" content="Mudar o estilo" />
+
+    <title>Mudar o estilo</title>
+
+    <link href="antigo.css" rel="stylesheet" id="estilo" />
+   
+
+    <script type="text/javascript">
+      function cEstilo(estilo) {
+        document.getElementById("estilo").href = estilo;
+      }
+    </script>
+  </head>
+  <body>
+    <div id="cabecalho">Sou o cabecalho !</div>
+    <br />
+
+    <div id="corpo">Corpo da web</div>
+
+    <input type="button" onclick="cEstilo('antigo.css')" value="Antigo" />
+    <input type="button" onclick="cEstilo('novo.css')" value="Novo" />
+  </body>
+</html>
