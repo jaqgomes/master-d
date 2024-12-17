@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+
+    <title>Estilos e Javascript</title>
+    <style>
+      #caixa-texto {
+        position: relative;
+        float: left;
+        width: 900px;
+        text-align: justify;
+        border: solid 1px blueviolet;
+        font-size: 24px;
+        margin: 24px;
+        padding: 10px;
+      }
+
+      #fonte-wiki {
+        font-style: italic;
+        float: right;
+        margin-top: 20px;
+      }
+
+      #caixa {
+        position: absolute;
+        visibility: hidden;
+        font-size: 14px;
+        border: 1px solid #1d158f;
+        background-color: #c9c6f5;
+        width: 200px;
+        padding: 20px;
+      }
+    </style>
+
+    <script type="text/Javascript">
+      function mostrar(valor, cima, esquerda) {
+          document.getElementById("caixa").innerHTML = valor;
+          document.getElementById("caixa").style.top = cima + 19;
+          document.getElementById("caixa").style.left = esquerda;
+          document.getElementById("caixa").style.visibility = "visible";
+      }
+
+      function ocultar() {
+          document.getElementById("caixa").style.visibility = "hidden";
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="caixa-texto">
+      <p>
+        Dom Quixote la Mancha (Dom Quijote de la Mancha em castelelhano) um livro escrito pelo espahol.<a
+          href="#onmouser='mostrar('Miguel de Cervantes Saavedra foi um romancista, dramaturgo e poeta castelhano.', this.offsetTop, this.offsetLeft)'"
+          onmouseout="ocultar()"
+          >Miguel de Cervantes (1547-1616).</a
+        ><br />
+      </p>
+
+      <p>
+        O título e ortografia originais eram EL ingenioso hidalgo Don Quixote de La Mancha, com sua primeira ediçâo
+        publicada em
+        <a
+          href="#"
+          onmouseover="mostrar('Madrid é a capital e a maior cidade da Espanha.', this.offsetTop, this.offsetLeft)"
+          onmouseout="ocultar()"
+          >Madrid</a
+        >, no ano de 1605.<br />
+      </p>
+
+      <p>É composto por 126 capitulos, divididos em duas partes a primeira surgia em 1605 e a outra em 1615.<br /></p>
+
+      <p>
+        A coroa espanhola patrocinou uma edição revisada em quatro volumes a cargo de Joaquim Ibarra. Inciada em 1777
+        conclui-se em 1780 com tiragem inicial de 1600 exemplares.<br />
+      </p>
+
+      <span id="fonte-wiki">-fonte: Wikipedia</span>
+
+      <div id="caixa">&nbsp;</div>
+    </div>
+  </body>
+</html>
