@@ -1,0 +1,15 @@
+.circulo {
+  background-color: lightblue;
+  border-radius: 50%;
+  width: 150px;
+  height: 100px;
+  text-align: center;
+  border-bottom: 35px;
+}
+
+#circulo {
+  font-size: 15px;
+  position: absolute;
+  line-height: 90px;
+  display: contents;
+}
