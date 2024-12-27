@@ -1,0 +1,17 @@
+h3 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  margin: 2px;
+  border: solid 1px;
+  border-radius: 0px;
+}
