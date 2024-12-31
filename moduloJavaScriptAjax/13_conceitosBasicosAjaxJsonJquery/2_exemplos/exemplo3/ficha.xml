@@ -1,0 +1,19 @@
+<ficha>
+
+    <nome>Carlos</nome>
+
+    <dados>
+        <idade>30</idade>
+        <cidade>Lisboa</cidade>
+        <profissao>Informatico</profissao>
+    </dados>
+
+    <nome>Joao</nome>
+
+    <dados>
+        <idade>33</idade>
+        <cidade>Porto</cidade>
+        <profissao>Professor</profissao>
+    </dados>
+
+</ficha> 
