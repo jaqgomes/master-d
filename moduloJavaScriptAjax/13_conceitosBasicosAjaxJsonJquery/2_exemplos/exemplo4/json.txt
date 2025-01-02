@@ -1,0 +1,20 @@
+{
+    "ficha": [
+        {
+            "nome": "Carlos",
+            "parametros": {
+                "idade": "30",
+                "cidade": "Lisboa",
+                "profissao": "informatico"
+            }
+        },
+        {
+            "nome": "Joao",
+            "parametros": {
+                "idade": "33",
+                "cidade": "Porto",
+                "profissao": "professor"
+            }
+        }
+    ]
+}
