@@ -1,0 +1,19 @@
+.adClasse {
+  color: #ff000f;
+}
+
+.caixa {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  float: left;
+  border: 1px solid #000;
+}
+
+.gClasse {
+  background-color: green;
+}
+
+.vClasse {
+  background-color: red;
+}

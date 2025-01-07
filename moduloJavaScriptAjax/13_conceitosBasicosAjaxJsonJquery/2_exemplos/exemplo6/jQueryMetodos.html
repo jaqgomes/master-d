@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <meta name="description" content="método utilizando jQuery" />
+
+    <title>jQuery - Métodos</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="jQueryMetodos.css" />
+  </head>
+  <body>
+    <div id="caixa1" class="caixa impar">Caixa 1</div>
+    <div id="caixa2" class="caixa par gClasse">Caixa 2</div>
+    <div id="caixa3" class="caixa impar">Caixa 3</div>
+    <div id="caixa4" class="caixa par">Caixa 4</div>
+    <div id="caixa5" class="caixa impar">Caixa 5</div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <label for="text1">Texto 1:</label><input id="text1" type="text" name="texto" /> 
+    <br/> <br/>
+    <label for="text2">Texto 2:</label><input id="text2" type="text" name="texto2" />
+
+    <br /><br /><br/>
+
+    <a href="">REINICIAR EXEMPLO</a>
+
+    <br /><br /><br/>
+
+    <a href="#" onclick="$('#caixa1').addClass('adClasse'); return false">
+        Adicionar classe à caixa 1
+    </a>
+    <br/><br/>
+
+    <a href="#" onclick="$('#caixa2').append('<br/><b>Texto adicionado</b>'); return false">
+        Adicionar texto à caixa 2
+    </a>
+    <br /><br />
+
+    <a href="#" onclick="$('#caixa5').after($('#caixa2').clone()); return false">
+        Clonar a caixa 2 e depois da caixa 5
+    </a>
+    <br/><br/>
+
+    <a href="#" onclick="$('#caixa3').css('background-color', '#ff0000');return false"
+      >Mudar o Css da caixa 3 colocando um fundo vermelho
+    </a>
+    <br /><br />
+
+    <a href="#" onclick="$('#caixa4').remove();return false">
+        Eliminar a caixa 4
+    </a>
+    <br /><br />
+
+    <a href="#" onclick="$('#caixa2').removeClass('gClasse'); return false">
+        Eliminar a classe que faz a caixa 2 verde
+    </a>
+    <br /><br />
+
+    <a href="#" onclick="$(':input[name=\'texto\']').val('valor inserido'); return false">
+        Escreva o valor de um input(texto1)
+    </a>
+    <br /><br />
+
+    <a href="#" onclick="if($(':input[name=\'texto2\']').val()=='vermelho'){$('.caixa').addClass('vClasse')}; return false">
+        Se escrever no texto 2 "vermelho", atualiza a cor de todas as caixas para vermelho
+    </a>
+    </body>
+</html>
