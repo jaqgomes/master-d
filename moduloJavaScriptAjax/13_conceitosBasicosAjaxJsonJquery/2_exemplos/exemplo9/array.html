@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <meta name="description" content="Como pode dado um array, pesquisar o elemento colocado num campo de texo" />
+
+    <title>jQuery -each</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="array.js"></script>
+  </head>
+  <body>
+    <label for="array">O array é composto por:</label>
+    <br /><br />
+
+    <script>
+      $.each(vector, function (key, valor) {
+        document.write("<b>" + valor + "<b/><br/>");
+      });
+    </script>
+
+    <br />
+
+    <input id="buscar" type="text" value="" />
+
+    <a href="#" onClick="buscarEmVector($('#buscar').val());return false">Existe no vetor?</a>
+
+    <script>
+      function buscarEmVector(valor) {
+        if ($.inArray(valor, vector) !== -1) {
+          alert("Existe!");
+        } else {
+          alert("Não existe!");
+        }
+      }
+    </script>
+  </body>
+</html>
