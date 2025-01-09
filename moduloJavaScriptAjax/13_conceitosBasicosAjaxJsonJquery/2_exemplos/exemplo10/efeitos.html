@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <meta
+      name="description"
+      content="efeitos permite adicionar efeitos visuais a uma pagina web, atraves  da criacao de animações"
+    />
+
+    <title>jQuery - animações</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="efeitos.css" />
+  </head>
+  <body>
+    <div id="caixa1" class="odd caixa">Caixa 1</div>
+    <div id="caixa2" class="even caixa">Caixa 2</div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <a href="">REINICIAR EXEMPLO</a>
+
+    <br /><br /><br />
+
+    <a href="#" onclick="$('#caixa1').hide()">Ocultar caixa 1</a><br />
+
+    <a href="#" onclick="$('#caixa1').show()">Mostrar caixa 1</a><br />
+
+    <a href="#" onclick="$('#caixa2').fadeOut()">Ocultar caixa 2 pela opacidade</a><br />
+
+    <a href="#" onclick="$('#caixa2').fadeIn()">Mostrar caixa 2 pela opacidade</a><br />
+
+    <a href="#" onclick="$('#caixa1').slideUp()">Ocultar a caixa 1 com desliza vertical inferior</a><br />
+
+    <a href="#" onclick="$('#caixa1').slideDown()">Mostrar o deslize vertical superior da caixa 1</a><br />
+  </body>
+</html>
