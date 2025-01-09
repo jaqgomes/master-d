@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <meta name="description" content="Utilizacao de varios tipos de evento" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="diversosEventos.css" />
+    <script type="text/javascript" src="diversosEventos.js"></script>
+
+    <title>Utilização de vários tipos de evento</title>
+  </head>
+  <body>
+    <div class="caixa impar" id="caixa">Caixa 1</div>
+
+    <br /><br />
+
+    <form method="post" action="">
+      <label for="input1">Texto 1 :</label>
+      <input type="text" id="input1" name="caixa1" />
+
+      <br /><br />
+
+      <label for="input2">Texto 2 :</label>
+      <input type="text" id="input2" name="caixa2" />
+
+      <br /><br />
+
+      <label for="input3">Texto 3:</label>
+      <input type="text" id="input3" name="caixa3" />
+
+      <br /><br />
+
+      <button id="enviar" onclick="alert('Clique em mim, sou um botão do formulário')">Enviar</button>
+    </form>
+
+    <br /><br />
+
+    <a href="#" onclick="$('enviar').click(); return false">Simular click no botão</a>
+  </body>
+</html>
