@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <meta name="description" content="utilizacao de efeitos q8e sejam mais ou menos rapidos" />
+    <title>jQuery - animacao</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="duracaoEfeitos.css" />
+  </head>
+  <body>
+    <div id="caixa1" class="odd caixa">Caixa 1</div>
+    <div id="caixa2" class="even caixa">Caixa 2</div>
+ 
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <a href="">REINICIAR EXEMPLO</a>
+
+    <br /><br /><br />
+
+    <a href="#" onclick="$('#caixa1').hide('slow')">Ocultar caixa 1</a><br />
+
+    <a href="#" onclick="$('#caixa1').show('fast')">Mostrar caixa 1</a><br />
+
+    <a href="#" onclick="$('#caixa2').fadeOut(2000)">Ocultar caixa 2 pela opacidade</a><br />
+
+    <a href="#" onclick="$('#caixa2').fadeIn(20000)">Mostrar caixa 2 pela opacidade</a><br />
+
+    <a href="#" onclick="$('#caixa1').slideUp(500)">Ocultar a caixa 1 com desliza vertical inferior</a><br />
+
+    <a href="#" onclick="$('#caixa1').slideDown(1500)">Mostrar o deslize vertical superior da caixa 1</a><br />
+  </body>
+</html>
