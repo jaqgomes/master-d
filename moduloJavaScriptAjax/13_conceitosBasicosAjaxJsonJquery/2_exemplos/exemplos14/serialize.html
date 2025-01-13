@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <meta
+      name="description"
+      content="este exemplo utiliza o envio de dados do formulario sem ter dar forma e ler dado a dado que vão 
+      crescendo em números de campos, com um formulario que pede enderecos de e-mail."
+    />
+    <title>Serialize</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="serialize.js"></script>
+  </head>
+  <body>
+    <form id="formulario" method="post" action="">
+      <label for="nome">Nome </label><input id="nome" type="text" name="nome" /><br /><br />
+
+      <label for="apelido">Apelido </label><input id="apelido" type="text" name="apelido" /><br /><br />
+
+      <label for="telemovel">Telemovel </label><input id="telemovel" type="text" name="telemovel" /><br /><br />
+
+      <label for="email">Email </label><input id="email" type="text" name="email" /><br /><br />
+      
+      <label for="idade">Idade </label><input id="idade" type="text" name="idade" /><br /><br />
+    </form>
+
+    <a href="#" onClick="serie()">Serializar formulario</a>
+
+    <div id="dados"></div>
+
+    <br /><br />
+  </body>
+</html>
