@@ -1,0 +1,11 @@
+{
+    "geral":[
+        {"titulo": "Início", "descricao": "Aqui fica a descrição sobre início."},
+
+        {"titulo": "Quem somos", "descricao": "Um pequeno texto sobre nós."},
+
+        {"titulo": "Produtos", "descricao": "Aqui poderia estar um pequeno texto sobre todos os produtos."},
+
+        {"titulo": "Contactos", "descricao" :"Os contactos são essenciais em todos os websites!"}
+    ]
+}
