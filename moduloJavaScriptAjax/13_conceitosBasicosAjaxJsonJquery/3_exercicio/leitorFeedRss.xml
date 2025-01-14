@@ -1,0 +1,315 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:media="http://search.yahoo.com/mrss/"
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+    <channel>
+        <title>
+            <![CDATA[ Latest news ]]>
+        </title>
+        <description>
+            <![CDATA[ Most recent news ]]>
+        </description>
+        <link>https://www.zdnet.com/</link>
+        <image>
+            <url>https://www.zdnet.com/a/neutron/images/logos/logo.png</url>
+            <title>Latest news</title>
+            <link>https://www.zdnet.com/</link>
+        </image>
+        <generator>ZDNET</generator>
+        <lastBuildDate>Mon, 13 Jan 2025 16:52:40 GMT</lastBuildDate>
+        <pubDate>Mon, 13 Jan 2025 16:52:40 GMT</pubDate>
+        <copyright>
+            <![CDATA[ © 2025 ZDNET, A ZIFF DAVIS COMPANY. ALL RIGHTS RESERVED. ]]>
+        </copyright>
+        <language>
+            <![CDATA[ en ]]>
+        </language>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <ttl>2</ttl>
+        <category>
+            <![CDATA[ Technology ]]>
+        </category>
+        <atom:link rel="self" href="https://www.zdnet.com/news/rss.xml" type="application/rss+xml"/>
+        <item>
+            <title>
+                <![CDATA[ The best large tablets of 2025: Expert tested and reviewed ]]>
+            </title>
+            <description>
+                <![CDATA[ We tested the best large tablets from Apple, Samsung, Microsoft, and more, to help you choose the right one. ]]>
+            </description>
+            <link>https://www.zdnet.com/article/best-large-tablet/</link>
+            <guid isPermaLink="false">0ca8fffa-ebce-40b4-ba18-3780107a0937</guid>
+            <pubDate>Mon, 13 Jan 2025 16:30:00 GMT</pubDate>
+            <media:credit role="author">
+                <![CDATA[ Allison Murray ]]>
+            </media:credit>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ This mini SSD enclosure transformed my data management - and I never leave home without it ]]>
+            </title>
+            <description>
+                <![CDATA[ The Satechi Mini NVMe SSD Enclosure is a useful accessory for transferring big files, moving 20GB of data in less than a minute. ]]>
+            </description>
+            <link>https://www.zdnet.com/article/this-mini-ssd-enclosure-transformed-my-data-management-and-i-never-leave-home-without-it/</link>
+            <guid isPermaLink="false">6d2d9c41-4839-4e6d-98a0-87913ffc68b2</guid>
+            <pubDate>Mon, 13 Jan 2025 15:14:00 GMT</pubDate>
+            <media:credit role="author">
+                <![CDATA[ Cesar Cadenas ]]>
+            </media:credit>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ My favorite GPS tracker has unlimited battery life and surprisingly accurate tracking ]]>
+            </title>
+            <description>
+                <![CDATA[ Garmin's eTrex Solar GPS tracker has an effectively long battery and extensive GNSS support for an affordable price. ]]>
+            </description>
+            <link>https://www.zdnet.com/article/my-favorite-gps-tracker-has-unlimited-battery-life-and-surprisingly-accurate-tracking/</link>
+            <guid isPermaLink="false">6ae87b27-5334-48be-a203-3ef88bdf62ce</guid>
+            <pubDate>Mon, 13 Jan 2025 15:02:00 GMT</pubDate>
+            <media:credit role="author">
+                <![CDATA[ Matthew Miller ]]>
+            </media:credit>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ This organizer pouch is the life-simplifying tech accessory I didn't know I needed ]]>
+            </title>
+            <description>
+                <![CDATA[ Orbitkey's 2-in-1 tech pouch could be the perfect companion to help you get organized this year. ]]>
+            </description>
+            <link>https://www.zdnet.com/article/this-organizer-pouch-is-the-life-simplifying-tech-accessory-i-didnt-know-i-needed/</link>
+            <guid isPermaLink="false">0787daf8-79c0-4a61-92d0-344c6dab8c7f</guid>
+            <pubDate>Mon, 13 Jan 2025 14:33:00 GMT</pubDate>
+            <media:credit role="author">
+                <![CDATA[ Kayla Solino ]]>
+            </media:credit>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ Don't plug these 7 devices into extension cords - space heaters and other common items included ]]>
+            </title>
+            <description>
+                <![CDATA[ Extension cords and power strips are often safe for home and office electronics, but they can be dangerous for other common appliances during the winter. ]]>
+            </description>
+            <link>https://www.zdnet.com/article/dont-plug-these-7-devices-into-extension-cords-space-heaters-and-other-common-items-included/</link>
+            <guid isPermaLink="false">1f018c32-b979-4287-b81e-0bab7c8dce97</guid>
+            <pubDate>Mon, 13 Jan 2025 14:28:00 GMT</pubDate>
+            <media:credit role="author">
+                <![CDATA[ Chris Bayer ]]>
+            </media:credit>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ Three CES 2025 products I'd buy as soon as they're available for purchase ]]>
+            </title>
+            <description>
+                <![CDATA[ CES is officially over, so I'm reflecting on the products that left the biggest impression on me - and that I'd spend my money on. ]]>
+            </description>
+            <link>https://www.zdnet.com/article/three-ces-2025-products-id-buy-as-soon-as-theyre-available-for-purchase/</link>
+            <guid isPermaLink="false">865fd4d2-9d1b-412f-9311-0f78d13c6449</guid>
+            <pubDate>Mon, 13 Jan 2025 14:07:00 GMT</pubDate>
+            <media:credit role="author">
+                <![CDATA[ Kerry Wan ]]>
+            </media:credit>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ This new Philips smart lock combines palm recognition with a built-in camera for ultimate security ]]>
+            </title>
+            <description>
+                <![CDATA[ The Philips 5000 Series Video Palm Recognition smart lock builds upon the success of its predecessor. ]]>
+            </description>
+            <link>https://www.zdnet.com/article/this-new-philips-smart-lock-combines-palm-recognition-with-a-built-in-camera-for-ultimate-security/</link>
+            <guid isPermaLink="false">04496f06-0f59-410a-a12e-382709414985</guid>
+            <pubDate>Mon, 13 Jan 2025 13:45:03 GMT</pubDate>
+            <media:credit role="author">
+                <![CDATA[ Maria Diaz ]]>
+            </media:credit>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ I tried an AI wristband that listens to you 24/7 - and makes IRL conversations searchable ]]>
+            </title>
+            <description>
+                <![CDATA[ The Bee Pioneer Band listens to everything you say - and offers feedback. Should I be worried? ]]>
+            </description>
+            <link>https://www.zdnet.com/article/i-tried-an-ai-wristband-that-listens-to-you-247-and-makes-irl-conversations-searchable/</link>
+            <guid isPermaLink="false">40f7cd01-e5b9-4567-9521-edd9e1f971dc</guid>
+            <pubDate>Mon, 13 Jan 2025 13:03:39 GMT</pubDate>
+            <media:credit role="author">
+                <![CDATA[ Sabrina Ortiz ]]>
+            </media:credit>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ How AI could supercharge your glucose monitor - and catch other health issues ]]>
+            </title>
+            <description>
+                <![CDATA[ Stanford researchers built an algorithm to predict subtypes of Type 2 diabetes that works right from your home. ]]>
+            </description>
+            <link>https://www.zdnet.com/article/how-ai-could-supercharge-your-glucose-monitor-and-catch-other-health-issues/</link>
+            <guid isPermaLink="false">6f9b2f4e-2cbd-4f60-ba04-7d84abb7e45b</guid>
+            <pubDate>Mon, 13 Jan 2025 08:25:56 GMT</pubDate>
+            <media:credit role="author">
+                <![CDATA[ Radhika Rajkumar ]]>
+            </media:credit>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ This iPhone bug is particularly alarming ]]>
+            </title>
+            <description>
+                <![CDATA[ A photo circulating on Reddit, showing an iPhone alarm going off several hours late, has reignited claims of a long-standing iOS bug that Apple has yet to address. ]]>
+            </description>
+            <link>https://www.zdnet.com/article/this-iphone-bug-is-particularly-alarming/</link>
+            <guid isPermaLink="false">08b6dc78-f50b-4712-8ffc-70740e1226c1</guid>
+            <pubDate>Mon, 13 Jan 2025 08:13:25 GMT</pubDate>
+            <media:credit role="author">
+                <![CDATA[ Adrian Kingsley-Hughes ]]>
+            </media:credit>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ This viral 'phone toaster' at CES can fully charge your handset in under 5 seconds - sort of ]]>
+            </title>
+            <description>
+                <![CDATA[ All you need is a Swippitt phone case and the company's charging hub to get a fresh battery swapped in seconds. ]]>
+            </description>
+            <link>https://www.zdnet.com/article/this-viral-phone-toaster-at-ces-can-fully-charge-your-handset-in-under-5-seconds-sort-of/</link>
+            <guid isPermaLink="false">91bc025e-8271-4140-b5a5-67ab483ccd19</guid>
+            <pubDate>Sun, 12 Jan 2025 13:00:17 GMT</pubDate>
+            <media:credit role="author">
+                <![CDATA[ Sabrina Ortiz ]]>
+            </media:credit>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ CES 2025: The 25 best products that impressed us the most ]]>
+            </title>
+            <description>
+                <![CDATA[ ZDNET editors scoured the show floor for a week and identified all of this year's best products - including those that will make the biggest impact on the future. ]]>
+            </description>
+            <link>https://www.zdnet.com/article/ces-2025-zdnet-best-products-2025-01-12/</link>
+            <guid isPermaLink="false">d4d9be55-4f86-41f6-8729-6a8f3a914622</guid>
+            <pubDate>Sun, 12 Jan 2025 12:00:24 GMT</pubDate>
+            <media:credit role="author">
+                <![CDATA[ Allison Murray ]]>
+            </media:credit>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ Halliday's new AI glasses are what Meta, Google, and Apple have been trying to build ]]>
+            </title>
+            <description>
+                <![CDATA[ I tried Halliday's AI smart glasses at CES 2025. With a display that's built into the frame - not the lens - they even beat my Ray-Ban Metas in several ways. ]]>
+            </description>
+            <link>https://www.zdnet.com/article/hallidays-new-ai-glasses-are-what-meta-google-and-apple-have-been-trying-to-build/</link>
+            <guid isPermaLink="false">c0d0c877-5e19-4d95-957a-6882847ca6f3</guid>
+            <pubDate>Sun, 12 Jan 2025 12:00:23 GMT</pubDate>
+            <media:credit role="author">
+                <![CDATA[ Sabrina Ortiz ]]>
+            </media:credit>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ 6 ways continuous learning can advance your career ]]>
+            </title>
+            <description>
+                <![CDATA[ The rapid pace of change in business today requires professionals to keep developing new skills. These business leaders tell us how. ]]>
+            </description>
+            <link>https://www.zdnet.com/article/6-ways-continuous-learning-can-advance-your-career/</link>
+            <guid isPermaLink="false">9bc9daec-1e9a-483a-aad5-ffed9e22a005</guid>
+            <pubDate>Sun, 12 Jan 2025 12:00:17 GMT</pubDate>
+            <media:credit role="author">
+                <![CDATA[ Mark Samuels ]]>
+            </media:credit>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ Google TVs are getting a major Gemini upgrade in 2025 - here are the 3 best features ]]>
+            </title>
+            <description>
+                <![CDATA[ You will finally be able to speak to your Google TV like you would speak to a person. And future models will support ambient sensors for a hands-free viewing experience. ]]>
+            </description>
+            <link>https://www.zdnet.com/article/google-tvs-are-getting-a-major-gemini-upgrade-in-2025-here-are-the-3-best-features/</link>
+            <guid isPermaLink="false">5f001f77-cd41-4529-8fca-7ab8d9d5fa86</guid>
+            <pubDate>Sun, 12 Jan 2025 11:30:16 GMT</pubDate>
+            <media:credit role="author">
+                <![CDATA[ Sabrina Ortiz ]]>
+            </media:credit>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ Slow home internet? 3 simple things I always check first for faster Wi-Fi ]]>
+            </title>
+            <description>
+                <![CDATA[ For snappier internet connections, here's how to get the most out of your router without paying for an upgrade. ]]>
+            </description>
+            <link>https://www.zdnet.com/article/slow-home-internet-3-simple-things-i-always-check-first-for-faster-wi-fi/</link>
+            <guid isPermaLink="false">6d8dd986-29bb-4789-9014-350d46980aff</guid>
+            <pubDate>Sun, 12 Jan 2025 11:00:17 GMT</pubDate>
+            <media:credit role="author">
+                <![CDATA[ Chris Bayer ]]>
+            </media:credit>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ I saw Roborock's 'mechanical arm' robot vacuum pick up objects - and it likely won't be my last ]]>
+            </title>
+            <description>
+                <![CDATA[ The Roborock Saros Z70 robot vacuum, unveiled at CES 2025, features an arm that grabs toys, socks, and other small obstacles to clean your floors more thoroughly. ]]>
+            </description>
+            <link>https://www.zdnet.com/article/i-saw-roborocks-mechanical-arm-robot-vacuum-pick-up-objects-and-it-likely-wont-be-my-last/</link>
+            <guid isPermaLink="false">d614931e-04f9-47a5-bd7a-fbfe3cf7e52a</guid>
+            <pubDate>Sat, 11 Jan 2025 13:00:19 GMT</pubDate>
+            <media:credit role="author">
+                <![CDATA[ Maria Diaz ]]>
+            </media:credit>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ I replaced my Google Pixel 9 Pro with the OnePlus 13 - and it set a new standard for me ]]>
+            </title>
+            <description>
+                <![CDATA[ The latest OnePlus flagship sets a high bar for every other premium phone this year, even if there's still one thing holding it back from perfection. ]]>
+            </description>
+            <link>https://www.zdnet.com/article/i-replaced-my-google-pixel-9-pro-with-the-oneplus-13-and-it-set-a-new-standard-for-me/</link>
+            <guid isPermaLink="false">42203932-b183-4a60-b44f-2ecc1346151b</guid>
+            <pubDate>Sat, 11 Jan 2025 12:30:00 GMT</pubDate>
+            <media:credit role="author">
+                <![CDATA[ Kerry Wan ]]>
+            </media:credit>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ I saw LG's StanbyMe 2 TV, and it's better than its viral successor in almost every way ]]>
+            </title>
+            <description>
+                <![CDATA[ It won't hit the market yet, but the LG StanbyMe 2 strikes the right balance of quirkiness, innovation, and performance -- making it my CES 2025 standout. ]]>
+            </description>
+            <link>https://www.zdnet.com/article/i-saw-lgs-stanbyme-2-tv-and-its-better-than-its-viral-successor-in-almost-every-way/</link>
+            <guid isPermaLink="false">19f502c2-74f1-416e-9c3b-4e55ef49c407</guid>
+            <pubDate>Sat, 11 Jan 2025 12:00:16 GMT</pubDate>
+            <media:credit role="author">
+                <![CDATA[ Kerry Wan ]]>
+            </media:credit>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ Samsung teased its stretchable Micro LED display at CES - my phone started to feel boring ]]>
+            </title>
+            <description>
+                <![CDATA[ It's not Flat Stanley stretchy yet, but the Samsung Display concept does open up some creative use cases for ambitious manufacturers. ]]>
+            </description>
+            <link>https://www.zdnet.com/article/samsung-teased-its-stretchable-micro-led-display-at-ces-my-phone-started-to-feel-boring/</link>
+            <guid isPermaLink="false">8524a89d-c53c-4b9b-8324-e88af00a73eb</guid>
+            <pubDate>Sat, 11 Jan 2025 11:30:16 GMT</pubDate>
+            <media:credit role="author">
+                <![CDATA[ Kerry Wan ]]>
+            </media:credit>
+        </item>
+    </channel>
+</rss>
