@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="description" />
+    <meta name="description" content="criacao do mapa, com adicao de texto e um botao para pesquisar a morada" />
+
+    <title>Geolocator</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      type="text/JavaScript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJ4UYojA3LduldgOlizCQJjjpNCjHkvn4&callback=myMap"
+    ></script>
+    <script type="text/javascript" src="geolocalizador.js"></script>
+  </head>
+
+  <body onload="carregarMapa()">
+
+    <input id="direccao" type="textbox" value="Lisboa" />
+    <input type="button" value="Geolocalizar" onclick="geo()" />
+
+    <br /><br /><br />
+
+    <div id="mapa" style="width: 300px; height: 175px"></div>
+  </body>
+</html>
