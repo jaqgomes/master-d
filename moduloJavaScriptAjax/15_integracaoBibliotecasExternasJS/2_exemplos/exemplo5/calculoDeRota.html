@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaqueline Lima" />
+    <meta
+      name="description"
+      content="neste exercicio ira criar um mapa, vão ser inseridos dois campos de texto e um botão 
+    irá pesquisar o caminho mais curto entre duas moradas indicadas."
+    />
+
+    <title>Calculo de Rota</title>
+
+    <script
+      type="text/JavaScript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJ4UYojA3LduldgOlizCQJjjpNCjHkvn4&callback=myMap"
+    ></script>
+    <script type="text/javascript" src="calculoDeRota.js"></script>
+  </head>
+
+  <body onload="carregarMapa()">
+    <label for="partida">Partida : </label>
+    <input id="partida" type="textbox"/> <br /><br />
+
+    <label for="destino">Destino :</label>
+    <input id="destino" type="textbox"/><br /><br />
+
+    <input type="button" value="Geolocalizar" onclick="calcularRota()" />
+    <br /><br /><br />
+
+    <div id="mapa" style="position: relative; float: left; width: 650px; height: 575px"></div>
+    <div id="rota" style="position: relative; float: left; width: 250px"></div>
+  </body>
+</html>
