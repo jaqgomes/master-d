@@ -1,0 +1,12 @@
+#mapa {
+    width: 450px;
+    height: 175px;
+    margin-bottom: 50px;
+}
+
+#fotos {
+    position: relative;
+    float: left;
+    width: 450px;
+    height: 455px;
+}
