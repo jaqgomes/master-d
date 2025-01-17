@@ -1,5 +1,5 @@
 $.ajax({
-    url: "https://api.nasa.gov/planetary/apod?api_key=9CeaQg2uPmNIpdrA7nBgHffiag66tPTWWdJS928i",
+    url: "https://api.nasa.gov/planetary/apod?api_key=",
     success: function (whatyougot) {
         document.getElementById("image").innerHTML = "<img src ='" + whatyougot.url + "'/>";
 
