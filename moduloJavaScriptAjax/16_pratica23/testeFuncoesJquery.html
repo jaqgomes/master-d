@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jaqueline Lima">
+    <meta name="description" content="Teste de funcoes jQuery">
+
+    <title>Teste Funcoes Jquery</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <link rel="stylesheet" href="testeFuncoesJquery.css">
+
+
+</head>
+
+<body>
+    <div id="quadrado" class="quadrado-normal">
+        <p>Quadrado</p>
+    </div>
+    <br /></br />
+
+    <button id="ocultar" type="button" onclick="$('#quadrado').hide()">Ocultar</button>
+
+    <br /><br />
+
+
+    <button id="mostrar" type="button" onclick="$('#quadrado').show()">Mostrar</button>
+    <br /><br />
+
+    <button id="desvancer" type="button" onclick="$('#quadrado').fadeOut()">Desvancer</button>
+    <br /><br />
+
+    <button id="aparecer" type="button" onclick="$('#quadrado').fadeIn()">Aparecer</button>
+    <br /><br />
+
+    <button id="negrito" type="button" onclick="$('#quadrado').css('font-weight','bold')">Negrito</button>
+    <br /><br />
+
+    <button id="remover negrito" type="button" onclick="$('#quadrado').css('font-weight', '')">Remover negrito</button>
+    <br /><br />
+
+    <button id="encolher" type="button" onclick="$('#quadrado').addClass('quadrado-menor')">Encolher</button>
+    <br /><br />
+
+    <button id="tamanho inicial" type="button" onclick="$('#quadrado').removeClass('quadrado-menor')">Tamanho
+        Inicial</button>
+    <br /><br /><br />
+
+    <input id="ipt_inserir" type="text">
+    <button id="btn_inserir" type="button"
+        onclick="$('#quadrado').append('<br/><b>' + $(':input[id=\'ipt_inserir\']').val() + '</b>'); return false">Inserir</button>
+
+</body>
+
+</html>

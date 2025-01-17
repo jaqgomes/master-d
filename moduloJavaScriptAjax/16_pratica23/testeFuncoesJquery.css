@@ -1,0 +1,10 @@
+.quadrado-normal {
+    background: lightblue;
+    width: 250px;
+    height: 250px;
+}
+
+.quadrado-menor {
+    width: 150px;
+    height: 150px;
+}
