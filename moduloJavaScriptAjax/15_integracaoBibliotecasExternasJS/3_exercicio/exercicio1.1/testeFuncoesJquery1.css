@@ -1,0 +1,27 @@
+.container {
+    /*  cria um container 
+        para manter os botões 
+        fixos sem que a mudança 
+        da caixa afete a posição 
+        dos botões 
+    */
+    width: 310px;
+    height: 310px;
+}
+
+.caixa {
+    width: 300px;
+    height: 300px;
+    background-color: lightblue;
+}
+
+.encolhido {
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+}
+
+button {
+    display: block;
+    margin-bottom: 20px;
+}
