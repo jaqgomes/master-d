@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jaqueline Lima">
+    <meta name="description" content="Aplicao de jQuery como elemento de conteudo nas paginas da web">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"> </script>
+
+    <script type="text/javascript" src="aplicacaoJquerycomElementosDinamicos.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="aplicacaoJquerycomElementosDinamicos.css">
+
+</head>
+
+<body>
+    <div class="caixa0">
+        <span id="logo">
+            <img src="logo.png">
+        </span>
+    </div>
+
+    <div id="caixa1" class="caixa1">
+        <h1>Fadding em JQuery</h1>
+        <h3>Mostrar e ocultar elementos de forma suave com "fadding methods"</h3>
+
+        <table>
+            <tr>
+                <td>Ocultar toda a caixa</td>
+                <td>
+                    <button id="ocultarCaixa" class="botao cinza" type="button">Ocultar Caixa</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Ocultar a lista abaixo</td>
+                <td><button class="botao cinza" type="button" id="ocultarTudo">Ocultar</button></td>
+            </tr>
+
+            <tr>
+                <td>Mostrar Tudo</td>
+                <td><button class="botao cinza" id="mostrarTudo">Mostrar</button></td>
+            </tr>
+
+
+            <tr>
+                <td>Oculta e mostra a lista abaixo</td>
+                <td><button class="botao cinza" id="ocultarMostrar">Ocultar/Mostrar</button></td>
+            </tr>
+
+            <tr>
+                <td>Escolha a percentagem de fadding da lista:</td>
+
+                <td>
+                    <select name="opacidade" id="selOpacidade">
+                        <option value="0.2">20%</option>
+                        <option value="0.5">50%</option>
+                        <option value="0.8">80%</option>
+                        <option value="1" selected="1">100%</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Escolha um valor e um elemento para alterar o seu fadding: </td>
+                <td>
+
+                    <input id="percentagem" type="range" class="slider" name="percentagem" max="1" step="0.1" value="0">
+
+                    </br></br>
+
+                    <input id="percento" class="textbox" type="text" name="percento" value="0" maxlength="3" size="3"
+                        disabled>
+
+                    <select name="elemento" id="selElemento">
+                        <option value="e1">e1</option>
+                        <option value="e2">e2</option>
+                        <option value="e3">e3</option>
+                    </select>
+
+                    </br></br>
+
+                    <button id="mudar" class="botao cinza">Mudar</button>
+
+                    <button id="resetFade" class="botao cinza">Fade</button>
+                </td>
+
+                </td>
+            </tr>
+
+
+        </table>
+
+        <ul id="lista">
+            <li id="e1">
+                <h2>Elemento 1</h2>
+            </li>
+
+            <li id="e2">
+                <h2>Elemento 2</h2>
+            </li>
+
+            <li id="e3">
+                <h2>Elemento 3</h2>
+            </li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
