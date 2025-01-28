@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jaqueline Lima">
+    <meta name="description" content="Utiliza onchange da lista suspensa para ler os dados de um ficheiro PHP.">
+
+    <title>Dados</title>
+
+    <script type="text/javascript" src="exemplo1Dados.js"></script>
+    <link rel="stylesheet" href="exemplo1Dados.css">
+</head>
+
+<body>
+
+    <Label for="filmes">Filmes de </Label>
+
+    <select id="filmes" onChange="carregar(this.value)" name="ano">
+
+        <option value="">Selecione um ano</option>
+        
+        <option value="2015">Ano 2015</option>
+        <option value="2016">Ano 2016</option>
+        <option value="2017">Ano 2017</option>
+        <option value="2018">Ano 2018</option>
+        <option value="2019">Ano 2019</option>
+        <option value="2020">Ano 2020</option>
+    </select>
+
+    <div id="caixa">
+        <p>A lista de filmes do ano selecionado irá aparecer nesta caixa.</p>
+    </div>
+</body>
+
+
+
+</html>
