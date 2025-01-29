@@ -5,28 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script type="text/javascript" src="lista.js"></script>
+
 
     <title>Carrregar dados</title>
 
-    <!-- <script type="text/javascript" src="lista.js"></script> -->
-
-    <script type="text/javascript">
-        function mostrar() {
-
-            var xmlHttp = new XMLHttpRequest();
-
-            xmlHttp.open("GET", "lista.php", false);
-            xmlHttp.send(null);
-
-            var resultado = document.getElementById("resultado");
-            resultado.innerHTML = xmlHttp.responseText;
-        }
-
-        function esconder() {
-            var resultado = document.getElementById("resultado");
-            resultado.innerHTML = "";
-        }
-    </script>
 </head>
 
 <body>
