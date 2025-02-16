@@ -1,3 +1,4 @@
+//Carrega arquivo em XML
 function carregar() {
     var xhttp = new XMLHttpRequest();
 
@@ -48,6 +49,7 @@ function carregar() {
     }
 }
 
+//Carrega arquivo XML e converte em JSON
 function carregar2() {
     var url = 'https://www.zdnet.com/news/rss.xml';
     $.ajax({
