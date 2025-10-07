@@ -1,0 +1,91 @@
+<?php
+
+error_reporting(0);
+
+$precos = array(0, 65, 85, 70);
+$preco = '';
+$hotelPHP = $_GET['hotel'];
+$chegadaPHP = $_GET['chegada'];
+$partidaPHP = $_GET['partida'];
+
+$data1 = strtotime($chegadaPHP);
+$date2 = strtotime($partidaPHP);
+
+$dias = ($data2 - $data1) / 86400;
+
+switch ($hotelPHP) {
+
+    case 1:
+        $preco = $precos[1];
+        break;
+
+    case 2:
+        $preco = $precos[2];
+        break;
+
+    case 3:
+        $preco = $precos[3];
+        break;
+}
+
+$total = $dias * $preco;
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jaqueline Lima">
+    <meta name="description" content="simulador de despesas para viagem">
+
+    <link rel="stylesheet" href="calcularDespesas.css">
+    <script type="text/javascript" src="calcularDespesas.js">
+    </script>
+
+    <title>Calcular despesas de viagem</title>
+
+</head>
+
+<body>
+    <div class="caixa1">
+        <h1>Calcular despesas de viagem</h1>
+
+        <div class="hotel-lingua">
+
+            <form method="get" action="">
+
+                <select name="hotel" id="hotel" onchange="carregarHotel();">
+
+                    <option value="0">Selecione um hotel</option>
+                    <option value="1">Lisboa hotel</option>
+                    <option value="2">Carregado hotel</option>
+                    <option value="3">Vila Franca hotel</option>
+
+                </select>
+
+                <input type="text" id="lingua" placeholder="Língua Falada" disabled>
+
+                <br /><br />
+
+                <p class="para-input">Data chegada: </p>
+                <input type="date" name="chegada" id="chegada">
+
+                <p class="para-input">Data de partida: </p>
+                <input type="date" name="partida" id="partida">
+
+                <br /><br />
+
+                <button type="submit" class="btn btn-primary">Calcular</button>
+
+                <p id="preco-total">Preço total: <?php echo $total; ?> €.</p> 
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
