@@ -64,7 +64,7 @@ async function carregarMapa() {
 }
 
 function onLoad() {
-  // carregaRSS();
+  carregaRSS();
 }
 
 function submitBudget() {
@@ -151,27 +151,27 @@ function validateBudget() {
   );
 
   form.addEventListener(
-    "submit",
+    "onchange",
     function (event) {
       // Cada vez que o usuário tenta enviar os dados, verificamos
       // se o campo de email for válido.
 
       if (name.value.length < 3) {
-        nameError.innerHTML = "* Tem que ter mais que 3 letras";
+        nameError.innerHTML = "* Tem que ter mais que 3 letras.";
         nameError.className = "error active";
 
         event.preventDefault();
       }
 
       if (!name.validity.valid) {
-        nameError.innerHTML = "* É obrigatório informar nome de usuário";
+        nameError.innerHTML = "* É obrigatório informar nome de usuário.";
         nameError.className = "error active";
 
         event.preventDefault();
       }
 
       if (surname.value.length < 3) {
-        surnameError.innerHTML = "* Tem que ter mais que 3 letras";
+        surnameError.innerHTML = "* Tem que ter mais que 3 letras.";
         surnameError.className = "error active";
 
         event.preventDefault();
@@ -179,28 +179,28 @@ function validateBudget() {
 
       if (!surname.validity.valid) {
         surnameError.innerHTML =
-          "* O apelido do usúario precisa ter entre 2 a 16 caracteres";
+          "* O apelido do usuário precisa ter entre 2 a 16 caracteres.";
         surnameError.className = "error active";
 
         event.preventDefault();
       }
 
       if (cellPhone.value.length != 9) {
-        cellPhoneError.innerHTML = "* Tem que possuir 9 números";
+        cellPhoneError.innerHTML = "* Tem que possuir 9 números.";
         cellPhoneError.className = "error active";
 
         event.preventDefault();
       }
 
       if (isNaN(cellPhone.value)) {
-        cellPhoneError.innerHTML = "* O número inserido não está correto";
+        cellPhoneError.innerHTML = "* O número inserido não está correto.";
         cellPhoneError.className = "error active";
 
         event.preventDefault();
       }
 
       if (!cellPhone.value.startsWith(9)) {
-        cellPhoneError.innerHTML = "* Telemóvel não começa com 9";
+        cellPhoneError.innerHTML = "* Telemóvel não começa com 9.";
         cellPhoneError.className = "error active";
 
         event.preventDefault();
@@ -208,14 +208,14 @@ function validateBudget() {
 
       if (!cellPhone.validity.valid) {
         cellPhoneError.innerHTML =
-          "* O número do usuário precisa ter entre 9 números";
+          "* O número do usuário precisa ter 9 números.";
         cellPhoneError.className = "error active";
 
         event.preventDefault();
       }
 
       if (!email.validity.valid) {
-        emailError.innerHTML = "* insira um email valido";
+        emailError.innerHTML = "* Insira um email válido.";
         emailError.className = "error active";
 
         event.preventDefault();
@@ -227,6 +227,9 @@ function validateBudget() {
 
 function calculateBudget() {
   var valorBase = document.getElementById("pageType");
+
+  var prazo = document.getElementById("periodBg");
+
   var quemSomos = document.getElementById("whoCheck");
   var ondeEstamos = document.getElementById("whereCheck");
   var galeriaFotos = document.getElementById("photoGallery");
@@ -261,11 +264,21 @@ function calculateBudget() {
     valorFinal = valorFinal + 400;
   }
 
-  if(redeSocial.checked){
+  if (redeSocial.checked) {
     valorFinal = valorFinal + 400;
   }
 
-  document.getElementById("estimatedBudget").value = valorFinal;
+  if (prazo.value) {
+    var desconto = 5 * prazo.value;
+
+    if (desconto > 20) {
+      desconto = 20;
+    }
+
+    valorFinal = valorFinal - (desconto / 100) * valorFinal;
+  }
+
+  document.getElementById("estimatedBudget").value = valorFinal ? valorFinal : 0;
 }
 
 function validateContact() {
@@ -327,65 +340,62 @@ function validateContact() {
     false
   );
 
-  form.addEventListener(
-    "submit",
-    function (event) {
-      if (name.value.length < 3) {
-        nameError.innerHTML = "* Tem que ter mais de 3 letras";
-        nameError.className = "error active";
+  form.addEventListener("submit", function (event) {
+    if (name.value.length < 3) {
+      nameError.innerHTML = "* Tem que ter mais de 3 letras.";
+      nameError.className = "error active";
 
-        event.preventDefault();
-      }
-
-      if (!name.validity.valid) {
-        nameError.innerHTML = "É obrigatório informar nome do usuário";
-        nameError.className = "error active";
-
-        event.preventDefault();
-      }
-
-      if (surname.value.length < 3) {
-        surnameError.innerHTML = "* Tem que ter mais de 3 letras";
-        surnameError.className = "error active";
-
-        event.preventDefault();
-      }
-
-      if (!surname.validity.valid) {
-        surnameError.innerHTML =
-          "*O apelido do usúario precisa ter entre 2 a 16 caracteres";
-        surnameError.className = "error active";
-
-        event.preventDefault();
-      }
-
-      if (cellPhone.value.length != 9) {
-        cellPhoneError.innerHTML = "* Tem que possuir 9 números";
-        cellPhoneError.className = "error active";
-
-        event.preventDefault();
-      }
-
-      if (isNaN(cellPhone.value)) {
-        cellPhoneError.innerHTML = "* O número inserido não está correto";
-        cellPhoneError.className = "error active";
-
-        event.preventDefault();
-      }
-
-      if (!cellPhone.value.startsWith(9)) {
-        cellPhoneError.innerHTML = "* Telemóvel não começa com 9";
-        cellPhoneError.className = "error active";
-
-        event.preventDefault();
-      }
-
-      if (!email.validity.valid) {
-        emailError.innerHTML = "* insira um email valido";
-        emailError.className = "error active";
-
-        event.preventDefault();
-      }
+      event.preventDefault();
     }
-  );
+
+    if (!name.validity.valid) {
+      nameError.innerHTML = "É obrigatório informar nome do usuário.";
+      nameError.className = "error active";
+
+      event.preventDefault();
+    }
+
+    if (surname.value.length < 3) {
+      surnameError.innerHTML = "* Tem que ter mais de 3 letras.";
+      surnameError.className = "error active";
+
+      event.preventDefault();
+    }
+
+    if (!surname.validity.valid) {
+      surnameError.innerHTML =
+        "*O apelido do usuário precisa ter entre 2 a 16 caracteres.";
+      surnameError.className = "error active";
+
+      event.preventDefault();
+    }
+
+    if (cellPhone.value.length != 9) {
+      cellPhoneError.innerHTML = "* Tem que possuir 9 números.";
+      cellPhoneError.className = "error active";
+
+      event.preventDefault();
+    }
+
+    if (isNaN(cellPhone.value)) {
+      cellPhoneError.innerHTML = "* O número inserido não está correto";
+      cellPhoneError.className = "error active";
+
+      event.preventDefault();
+    }
+
+    if (!cellPhone.value.startsWith(9)) {
+      cellPhoneError.innerHTML = "* Telemóvel não começa com 9";
+      cellPhoneError.className = "error active";
+
+      event.preventDefault();
+    }
+
+    if (!email.validity.valid) {
+      emailError.innerHTML = "* Insira um email válido.";
+      emailError.className = "error active";
+
+      event.preventDefault();
+    }
+  });
 }
