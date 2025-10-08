@@ -306,7 +306,7 @@
 
           <div class="row">
             <div class="col">
-              <label for="pageType">Tipo de Página Web: </label>
+              <label for="pageType">Tipo de Página: </label>
               <select name="pageType" id="pageType" class="form-select">
                 <option selected>Escolha uma opcao</option>
                 <option value="100">Site</option>
@@ -341,7 +341,6 @@
                         name="whoCheck"
                         class="form-check-input me-1"
                         type="checkbox"
-                        value=""
                       />
                       <label
                         class="form-check-label stretched-link"
@@ -357,7 +356,6 @@
                         name="whereCheck"
                         class="form-check-input me-1"
                         type="checkbox"
-                        value="100"
                       />
 
                       <label
@@ -372,14 +370,14 @@
                   <div class="col">
                     <li class="list-group-item">
                       <input
+                        id="photoGallery"
+                        name="photoGallery"
                         class="form-check-input me-1"
                         type="checkbox"
-                        value=""
-                        id="thirdCheckboxStretched"
                       />
                       <label
                         class="form-check-label stretched-link"
-                        for="thirdCheckboxStretched"
+                        for="photoGallery"
                         >Galeria de Fotografias</label
                       >
                     </li>
@@ -387,14 +385,14 @@
                   <div class="col">
                     <li class="list-group-item">
                       <input
+                        id="eCommerce"
+                        name="eCommerce"
                         class="form-check-input me-1"
                         type="checkbox"
-                        value=""
-                        id="fourthCheckboxStretched"
                       />
                       <label
                         class="form-check-label stretched-link"
-                        for="fourthCheckboxStretched"
+                        for="eCommerce"
                         >eCommerce</label
                       >
                     </li>
@@ -405,14 +403,14 @@
                   <div class="col">
                     <li class="list-group-item">
                       <input
+                        id="internalManagement"
+                        name="internalManagement"
                         class="form-check-input me-1"
                         type="checkbox"
-                        value=""
-                        id="fifthCheckboxStretched"
                       />
                       <label
                         class="form-check-label stretched-link"
-                        for="fifthCheckboxStretched"
+                        for="internalManagement"
                         >Gestão Interna</label
                       >
                     </li>
@@ -420,14 +418,12 @@
                   <div class="col">
                     <li class="list-group-item">
                       <input
+                        id="news"
+                        name="news"
                         class="form-check-input me-1"
                         type="checkbox"
-                        value=""
-                        id="SixthCheckboxStretched"
                       />
-                      <label
-                        class="form-check-label stretched-link"
-                        for="SixthCheckboxStretched"
+                      <label class="form-check-label stretched-link" for="news"
                         >Notícias</label
                       >
                     </li>
@@ -438,14 +434,14 @@
                   <div class="col-6">
                     <li class="list-group-item">
                       <input
+                        id="socialMedia"
+                        name="socialMedia"
                         class="form-check-input me-1"
                         type="checkbox"
-                        value=""
-                        id="SeventhCheckboxStretched"
                       />
                       <label
                         class="form-check-label stretched-link"
-                        for="SeventhCheckboxStretched"
+                        for="socialMedia"
                         >Redes Sociais</label
                       >
                     </li>
@@ -475,7 +471,7 @@
           </div>
 
           <input
-            type="button"
+            type="submit"
             class="btn btn-primary mt-2"
             onclick="submitBudget()"
             value="Calcular"
@@ -486,7 +482,7 @@
 
     <section id="section_form_contact">
       <div class="container">
-        <form id="sectionContact" novalidate>
+        <form id="formContact" novalidate>
           <h2>Formulário de Contacto</h2>
 
           <div class="row">
@@ -511,12 +507,12 @@
                 aria-label="apelido"
                 required
               />
+              <span class="error" id="msg-surnameContact"></span>
             </div>
-            <span class="error" id="msg-surnameContact"></span>
           </div>
 
           <div class="row">
-            <div class="col-2">
+            <div class="col-3">
               <label for="cellPhoneContact">Telemóvel: </label>
               <input
                 name="cellPhoneContact"
@@ -526,7 +522,7 @@
                 aria-label="telemovel"
                 required
               />
-              <span class="error" id="msg-nameBg"></span>
+              <span class="error" id="msg-cellPhoneContact"></span>
             </div>
 
             <div class="col">
@@ -539,8 +535,8 @@
                 aria-label="email"
                 required
               />
+              <span class="error" id="msg-emailContact"></span>
             </div>
-            <span class="error" id="msg-emailContact"></span>
           </div>
 
           <div class="row">
@@ -569,8 +565,6 @@
                 id="subjectMeeting"
               ></textarea>
             </div>
-
-            <span class="error" id="msg-subjectMeetingContact"></span>
           </div>
 
           <input

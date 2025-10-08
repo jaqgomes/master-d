@@ -68,7 +68,7 @@ function onLoad() {
 }
 
 function submitBudget() {
-  // validateBudget();
+  validateBudget();
   calculateBudget();
 }
 
@@ -229,6 +229,12 @@ function calculateBudget() {
   var valorBase = document.getElementById("pageType");
   var quemSomos = document.getElementById("whoCheck");
   var ondeEstamos = document.getElementById("whereCheck");
+  var galeriaFotos = document.getElementById("photoGallery");
+  var eCommerce = document.getElementById("eCommerce");
+  var gestaoInterna = document.getElementById("internalManagement");
+  var noticia = document.getElementById("news");
+  var redeSocial = document.getElementById("socialMedia");
+
   var valorFinal = parseInt(valorBase.value);
 
   if (quemSomos.checked) {
@@ -236,6 +242,26 @@ function calculateBudget() {
   }
 
   if (ondeEstamos.checked) {
+    valorFinal = valorFinal + 400;
+  }
+
+  if (galeriaFotos.checked) {
+    valorFinal = valorFinal + 400;
+  }
+
+  if (eCommerce.checked) {
+    valorFinal = valorFinal + 400;
+  }
+
+  if (gestaoInterna.checked) {
+    valorFinal = valorFinal + 400;
+  }
+
+  if (noticia.checked) {
+    valorFinal = valorFinal + 400;
+  }
+
+  if(redeSocial.checked){
     valorFinal = valorFinal + 400;
   }
 
@@ -251,8 +277,8 @@ function validateContact() {
   var surname = document.getElementById("surnameContact");
   var surnameError = document.getElementById("msg-surnameContact");
 
-  var celPhone = document.getElementById("cellPhoneContact");
-  var celPhoneError = document.getElementById("msg-cellPhoneContact");
+  var cellPhone = document.getElementById("cellPhoneContact");
+  var cellPhoneError = document.getElementById("msg-cellPhoneContact");
 
   var email = document.getElementById("emailContact");
   var emailError = document.getElementById("msg-emailContact");
@@ -292,9 +318,8 @@ function validateContact() {
 
   email.addEventListener(
     "input",
-
     function (event) {
-      if (cellPhone.vality.valid) {
+      if (email.vality.valid) {
         emailError.innerHTML = "";
         emailError.className = "";
       }
@@ -302,9 +327,8 @@ function validateContact() {
     false
   );
 
-  form.addListener(
+  form.addEventListener(
     "submit",
-
     function (event) {
       if (name.value.length < 3) {
         nameError.innerHTML = "* Tem que ter mais de 3 letras";
@@ -327,7 +351,7 @@ function validateContact() {
         event.preventDefault();
       }
 
-      if (!surname.vality.valid) {
+      if (!surname.validity.valid) {
         surnameError.innerHTML =
           "*O apelido do usúario precisa ter entre 2 a 16 caracteres";
         surnameError.className = "error active";
