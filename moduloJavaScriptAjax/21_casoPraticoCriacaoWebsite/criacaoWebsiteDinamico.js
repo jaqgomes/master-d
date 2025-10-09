@@ -151,7 +151,7 @@ function validateBudget() {
   );
 
   form.addEventListener(
-    "onchange",
+    "submit",
     function (event) {
       // Cada vez que o usuário tenta enviar os dados, verificamos
       // se o campo de email for válido.
