@@ -38,7 +38,7 @@ function carregaRSS() {
 async function carregarMapa() {
   const { Map, InfoWindow, Event } = await google.maps.importLibrary("maps");
   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
-  const myLocation = { lat: 38.73, lng: -9.14 };
+  const myLocation = { lat: 38.711987, lng: -9.311931 };
 
   var options = {
     zoom: 12,
