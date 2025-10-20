@@ -64,7 +64,7 @@ async function carregarMapa() {
 }
 
 function onLoad() {
-  carregaRSS();
+  //carregaRSS();
 }
 
 function submitBudget() {

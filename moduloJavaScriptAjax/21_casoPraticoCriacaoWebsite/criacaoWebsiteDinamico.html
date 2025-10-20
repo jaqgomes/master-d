@@ -243,7 +243,7 @@
 
     <section id="section_budget">
       <div class="container">
-        <form id="formBudget" novalidate>
+        <form id="formBudget" novalidate onchange="calculateBudget()">
           <h2>Pedido de Orçamento</h2>
 
           <div class="row">
@@ -473,7 +473,7 @@
             type="submit"
             class="btn btn-primary mt-2"
             onclick="submitBudget()"
-            value="Calcular"
+            value="Pedir Orçamento"
           />
         </form>
       </div>
