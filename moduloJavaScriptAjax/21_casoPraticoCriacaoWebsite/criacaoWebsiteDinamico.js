@@ -31,8 +31,6 @@ function carregaRSS() {
       alert("Ocorreu um erro.");
     },
   });
-
-  this.welcomeMsg();
 }
 
 async function carregarMapa() {
@@ -64,12 +62,12 @@ async function carregarMapa() {
 }
 
 function onLoad() {
-  //carregaRSS();
+  welcomeMsg();
+  carregaRSS();
 }
 
 function submitBudget() {
   validateBudget();
-  calculateBudget();
 }
 
 function validateBudget() {
