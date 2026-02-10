@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="o exemplo2.php irá recolher os dados de um formulário JavaScript e convertê-los numa string JSON.
+       Esta string será enviada para segundo ficheiro, chamado compilador.php, que, por sua vez, irá devolver os 
+    dados no formato JSON para o exemplo2.php, com AJAX."
+    />
+    <meta name="author" content="Jaqueline Lima" />
+    <script type="text/javascript" src="formExem2.js"></script>
+
+    <title>Exemplo 2</title>
+  </head>
+  <body>
+    <form name="pessoal" action="" method="POST">
+      <label for="nome">Nome :</label>
+      <input type="text" name="nome" />
+      <br /><br />
+
+      <label for="email">Email :</label>
+      <input type="text" name="email" />
+      <br /><br />
+
+      <label>Passatempo</label><br /><br />
+      <input type="checkbox" name="passatempo" value="desporto" />
+
+      <label>Desporto</label><br /><br />
+
+      <input type="checkbox" name="passatempo" value="ler" />
+      <label>Ler</label>
+      <br /><br />
+
+      <input type="button" name="valid" value="Validar" onclick="validate()" />
+    </form>
+  </body>
+</html>

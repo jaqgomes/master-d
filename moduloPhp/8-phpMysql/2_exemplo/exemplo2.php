@@ -161,9 +161,6 @@
             echo 'Falha ao conectar à base de dados <br/>';
         }
         ?>
-
-    F
-
     </p>
 </body>
 
