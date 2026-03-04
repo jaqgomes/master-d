@@ -7,10 +7,12 @@
     <meta name="author" content="Jaqueline Lima">
     <meta name="description" content="exemplo de criptacao">
 
-    <title>Tetse de criptacao</title>
+    <title>Teste de criptacao</title>
 </head>
 
 <body>
+
+    Teste de criptacao: <br/>
 
     <?php
 
