@@ -1,0 +1,23 @@
+CREATE TABLE `livros` ( 
+`idLivro` int(11) NOT NULL auto_increment, 
+`titulo` varchar(300) NOT NULL, 
+`descricao` varchar(2000) NOT NULL, 
+`dataAluguer` date NOT NULL, 
+PRIMARY KEY (`idLivro`) 
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+INSERT INTO `livros` VALUES (1, 'As Viagens de Gulliver', 
+'Livro de aventura sobre as viagens de um escritor a um mundo 
+imaginário.', '2021‐02‐16'); 
+INSERT INTO `livros` VALUES (2, 'O senhor dos Anéis', 
+'História da jornada de um Hobbit ao monte do destino para destruir 
+Sauron, o Lorde das Trevas', '0000‐00‐00');
+
+CREATE TABLE `utilizadores` ( 
+`idUtilizador` int(11) NOT NULL auto_increment, 
+`utilizador` varchar(12) NOT NULL, 
+`senha` varchar(12) NOT NULL, 
+PRIMARY KEY (`idUtilizador`) 
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+INSERT INTO `utilizadores` VALUES (1, 'teste', 'teste'); 
